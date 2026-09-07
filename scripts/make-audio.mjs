@@ -22,10 +22,34 @@ const MODEL = process.env.ELEVENLABS_MODEL || 'eleven_v3';
 const FORMAT = 'mp3_44100_64';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
-const DRY = process.argv.includes('--dry-run');
-const arg = process.argv.slice(2).find((a) => !a.startsWith('--dry')) ;
-if (!arg) { console.error('usage: make-audio.mjs [--dry-run] <e/NNN | --all>'); process.exit(2); }
+const argv = process.argv.slice(2);
+const DRY = argv.includes('--dry-run');
+const flagVal = (f) => { const i = argv.indexOf(f); return i >= 0 ? (argv[i + 1] || '') : null; };
+const LIST = argv.includes('--list-voices');          // your voices (premade + added), with labels
+const LIBRARY = flagVal('--library');                  // search the public voice library, e.g. --library he
+const AUDITION = flagVal('--audition');                // --audition id1,id2 [e/NNN]: record 2 sample sentences per voice into audition/
+const arg = argv.find((a, i) => !a.startsWith('--') && argv[i - 1] !== '--library' && argv[i - 1] !== '--audition');
+if (!arg && !LIST && LIBRARY === null && AUDITION === null) {
+  console.error('usage: make-audio.mjs [--dry-run] <e/NNN | --all>\n       make-audio.mjs --list-voices | --library <lang> | --audition <id,id,...> [e/NNN]'); process.exit(2);
+}
 if (!KEY && !DRY) { console.error('ELEVENLABS_API_KEY is not set'); process.exit(2); }
+
+const H = { 'xi-api-key': KEY };
+async function getJson(url) { const r = await fetch(url, { headers: H }); if (!r.ok) throw new Error(`${r.status} ${await r.text()}`); return r.json(); }
+const label = (v) => [v.labels?.language, v.labels?.accent, v.labels?.gender, v.labels?.age, v.labels?.use_case || v.labels?.descriptive].filter(Boolean).join(', ');
+
+if (LIST) {
+  const { voices } = await getJson('https://api.elevenlabs.io/v1/voices');
+  for (const v of voices) console.log(`${v.voice_id}  ${v.name.padEnd(14)} ${v.category.padEnd(12)} ${label(v)}${v.description ? '  — ' + v.description.slice(0, 80) : ''}`);
+  process.exit(0);
+}
+if (LIBRARY !== null) {
+  const q = new URLSearchParams({ language: LIBRARY || 'he', page_size: '40', sort: 'usage_character_count_1y' });
+  const { voices } = await getJson('https://api.elevenlabs.io/v1/shared-voices?' + q);
+  console.log(`Public library voices for language "${LIBRARY || 'he'}" (add one to "My voices" in the ElevenLabs app before using its id):`);
+  for (const v of voices) console.log(`${v.voice_id}  ${v.name.padEnd(18)} ${[v.gender, v.age, v.accent, v.use_case].filter(Boolean).join(', ')}${v.description ? '  — ' + v.description.slice(0, 90) : ''}`);
+  process.exit(0);
+}
 
 const decode = (s) => s.replace(/<[^>]+>/g, ' ')
   .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ')
@@ -101,6 +125,24 @@ function needsWork(dir) {
   if (old.voice_id !== VOICE || old.model !== MODEL) return true;
   const { pages } = extract(fs.readFileSync(path.join(ROOT, dir, 'index.html'), 'utf8'));
   return pages.some((p, i) => p.some((t, k) => old.hashes[`p${pad(i + 1)}-s${pad(k + 1)}.mp3`] !== sha(t)));
+}
+
+if (AUDITION !== null) { // same two sentences with each candidate voice, into audition/ (git-ignored), nothing else touched
+  const dir = arg || 'e/001';
+  const { lang, pages } = extract(fs.readFileSync(path.join(ROOT, dir, 'index.html'), 'utf8'));
+  const samples = [pages[0][0], pages[0].find((t) => /\.\.\./.test(t)) || pages[0][pages[0].length - 1]];
+  const out = path.join(ROOT, 'audition'); fs.mkdirSync(out, { recursive: true });
+  const mine = Object.fromEntries((await getJson('https://api.elevenlabs.io/v1/voices')).voices.map((v) => [v.voice_id, v.name]));
+  let chars = 0;
+  for (const id of AUDITION.split(',').map((s) => s.trim()).filter(Boolean)) {
+    const name = mine[id] || 'unknown';
+    if (!mine[id]) { console.warn(`${id}: not in your voices (add it in the ElevenLabs app first), skipping`); continue; }
+    process.stdout.write(`${name} (${id}) … `);
+    const bufs = []; for (const t of samples) { bufs.push(await tts(t, lang)); chars += t.length; await sleep(300); }
+    const f = path.join(out, `${name}-${id}.mp3`); fs.writeFileSync(f, Buffer.concat(bufs)); console.log(f);
+  }
+  console.log(`audition done, ${chars} characters. Listen: afplay audition/<file>.mp3`);
+  process.exit(0);
 }
 
 const dirs = arg === '--all'
