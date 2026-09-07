@@ -15,8 +15,22 @@ editions.json         ← list shown by the library: n, date, title, domain, lan
 ledger.json           ← state for the routines: next_n, next_lang, family, history, tonight's menu
 prompts/menu.md       ← prompt for the morning routine (sends 5 topic options by email)
 prompts/build.md      ← prompt for the afternoon routine (builds, tests, publishes, emails)
+scripts/make-audio.mjs ← records the narration with ElevenLabs into e/NNN/audio/ (one MP3 per sentence + manifest.json)
 .nojekyll             ← tells GitHub Pages not to run Jekyll
 ```
+
+## Narration
+
+"הקרא לי" first looks for `e/NNN/audio/manifest.json` (the folder named in the page's `data-audio` attribute). If it exists,
+the page plays the recorded sentences one by one and highlights them; if not, it falls back to the device's built-in
+speech synthesis. The recordings are made by the build routine (Step 5b in `prompts/build.md`) with ElevenLabs;
+the API key lives only in the routine's prompt, never in this repository. To record by hand:
+
+```bash
+ELEVENLABS_API_KEY='…' node scripts/make-audio.mjs e/001
+```
+
+Cost: a story is about 3,500–4,500 characters, roughly that many ElevenLabs credits per night with `eleven_v3`.
 
 ## The story page
 

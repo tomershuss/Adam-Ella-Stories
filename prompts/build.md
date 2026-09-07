@@ -4,6 +4,14 @@ You are a scheduled, memoryless routine. Everything you need is in this reposito
 https://github.com/tomershuss/Adam-Ella-Stories (GitHub Pages site: https://tomershuss.github.io/Adam-Ella-Stories/).
 Work on the `main` branch. **Start by reading `ledger.json`.**
 
+## Keys (fill in before saving this routine)
+```
+ELEVENLABS_API_KEY = <<PASTE_YOUR_ELEVENLABS_API_KEY_HERE>>
+ELEVENLABS_VOICE_ID = pFZP5JQG7iQjIQuC4Bku        # optional; default "Lily", a soft narrator. Any ElevenLabs voice id works.
+ELEVENLABS_MODEL = eleven_v3                      # optional; eleven_v3 speaks Hebrew and English.
+```
+These values exist only here, in the routine's prompt. **Never write them into any file, commit, log, screenshot or email.** Pass them to commands only as environment variables on the command line, as shown in Step 5b. The repository is public: if a key ever lands in a commit, stop, tell Tomer in the email, and do not try to "fix" the history yourself. (Gmail needs no key: it is a connector of the routine.)
+
 ## Who this is for
 - Adam, 4, a boy. The story is written at his level: short sentences, words a 4-year-old knows.
 - Ella, 2, a girl. Every story has a repeating refrain or sound she can join in on (it appears at least 3 times, marked `class="s refrain"`).
@@ -16,7 +24,7 @@ Work on the `main` branch. **Start by reading `ledger.json`.**
 מדע · טבע וחיות · חלל · גוף האדם · אומנות · מוזיקה · היסטוריה · גיאוגרפיה · מתמטיקה · הנדסה · רגשות וחברות
 
 ## Step 0 — a rebuild request for yesterday's story?
-Search Gmail for the thread whose subject starts with `[סיפור לילה #M]` where `M = next_n - 1`. If Tomer replied (a message from tomer@shussman.net after the routine's own email) asking to change something, rebuild story M in `e/00M/` following the same steps below (keep its number, date and folder; update its `editions.json` entry and `history` summary; if M is also the newest story, copy it to `index.html` too), commit `story M: <title> (rebuilt)`, email him with subject `[סיפור לילה #M] <title> (rebuilt)`. Then continue with tonight's story.
+Search Gmail for the thread whose subject starts with `[סיפור לילה #M]` where `M = next_n - 1`. If Tomer replied (a message from tomer@shussman.net after the routine's own email) asking to change something, rebuild story M in `e/00M/` following the same steps below (keep its number, date and folder; re-run Step 5b so the narration matches the new text, it only re-records changed sentences; update its `editions.json` entry and `history` summary; if M is also the newest story, copy it to `index.html` too), commit `story M: <title> (rebuilt)`, email him with subject `[סיפור לילה #M] <title> (rebuilt)`. Then continue with tonight's story.
 
 ## Step 1 — where are we
 Read `ledger.json`. `N = next_n`, `NNN` = N zero-padded to 3 digits, `lang = next_lang`, `today` = today's date. If the folder `e/NNN/` already exists, stop: tonight's story was already built.
@@ -35,7 +43,7 @@ Read `ledger.json`. `N = next_n`, `NNN` = N zero-padded to 3 digits, `lang = nex
 ## Step 4 — write the story and build `e/NNN/index.html`
 Copy `template/story.html` to `e/NNN/index.html`. The template holds the engine plus story #1 (Tuli the turtle and the tides).
 
-**Keep the engine byte for byte.** Everything outside the two markers `<!-- … CONTENT START … -->` and `<!-- … CONTENT END … -->` (the CSS, the top bar, the nav, the notice, the whole `<script>`) must remain identical to the template. The only edits allowed outside the markers are: the `<html>` attributes `lang`, `dir`, `data-n="N"`, `data-date="YYYY-MM-DD"`, and the `<title>` (format: `סיפור לילה N · <title>` or `Bedtime Story N · <title>`).
+**Keep the engine byte for byte.** Everything outside the two markers `<!-- … CONTENT START … -->` and `<!-- … CONTENT END … -->` (the CSS, the top bar, the nav, the notice, the whole `<script>`) must remain identical to the template. The only edits allowed outside the markers are: the `<html>` attributes `lang`, `dir`, `data-n="N"`, `data-date="YYYY-MM-DD"`, `data-audio="/Adam-Ella-Stories/e/NNN/audio/"` (the folder where the recorded narration will be generated), and the `<title>` (format: `סיפור לילה N · <title>` or `Bedtime Story N · <title>`).
 
 Inside the markers replace **all** content:
 1. `<svg id="defs">`: define this story's characters and props once as `<symbol id="…" viewBox="…">` with simple, large shapes. Palette of 5–6 colors, the same for the whole story. Keep or replace the sky gradients and the `waves` symbol as needed. No branded or well-known characters. Use the symbols with `<use href="#id" x y width height>`; the same character must look the same on every page.
@@ -91,11 +99,22 @@ Then **open every mobile screenshot and look at it** (Read the PNG). For each pa
 
 Also validate the JSON files after editing them: `node -e "JSON.parse(require('fs').readFileSync('editions.json'));JSON.parse(require('fs').readFileSync('ledger.json'))"`.
 
+## Step 5b — record the narration (ElevenLabs)
+Only after Step 5 is clean (the text is final; every regenerated sentence costs credits).
+1. Dry run first: `node scripts/make-audio.mjs --dry-run e/NNN`. It must list every page with the right number of sentences and the character count (about 3,000–4,500).
+2. Record, with the keys from the **Keys** section passed only as environment variables on the command line:
+   ```bash
+   ELEVENLABS_API_KEY='<key>' ELEVENLABS_VOICE_ID='<voice id>' ELEVENLABS_MODEL='eleven_v3' node scripts/make-audio.mjs --all
+   ```
+   `--all` records every story whose narration is missing or outdated, so tonight's story and any older story that was never recorded (story 1 on the first run) are handled together. The script writes one MP3 per sentence plus `manifest.json` into `e/NNN/audio/` and only regenerates sentences whose text changed (so a rebuild costs almost nothing). If it recorded older stories too, add their folders to the commit in Step 6. The story page finds the folder through its `data-audio` attribute and plays the files when "Read to me" is pressed; without them it falls back to the phone's voice.
+3. Check: `e/NNN/audio/manifest.json` exists and `ls e/NNN/audio/*.mp3 | wc -l` equals the sentence count from the dry run. Listen to one file if you can (`ffprobe` or file size > 5 KB is a fair sanity check).
+4. If ElevenLabs fails (quota exceeded, invalid key, 4xx): do not retry endlessly. Delete `e/NNN/audio/` if it is incomplete, publish the story without narration, and say so in the email ("Narration not recorded: <reason>"). The phone's own voice still works.
+
 ## Step 6 — publish
 1. `cp e/NNN/index.html index.html` (the home page is always the newest story).
 2. Append to `editions.json`: `{ "n": N, "date": "YYYY-MM-DD", "title": "<title>", "domain": "<domain>", "lang": "<lang>", "path": "e/NNN/" }`.
 3. Update `ledger.json`: `next_n = N + 1`; `next_lang` = the other language (`he` ↔ `en`); push to `history` an object `{ "n": N, "date": "YYYY-MM-DD", "title": "<title>", "domain": "<domain>", "lang": "<lang>", "summary": "<2–3 English sentences: character, problem, discovery, the true fact, the refrain, music if any>", "music": { "title": "…", "youtube_id": "…" } or null }`; set `menu = null`.
-4. `git add -A && git commit -m "story N: <title>" && git push`. If the push is rejected: `git pull --rebase origin main` and push again.
+4. `git add e/NNN index.html editions.json ledger.json && git commit -m "story N: <title>" && git push` (the audio folder is inside `e/NNN`). If the push is rejected: `git pull --rebase origin main` and push again. Before pushing, `git grep -l "sk_\|xi-api-key" -- e index.html editions.json ledger.json` must print nothing (no key in the commit).
 5. Wait about a minute, then confirm `https://tomershuss.github.io/Adam-Ella-Stories/e/NNN/` returns HTTP 200 (`curl -s -o /dev/null -w "%{http_code}"`). If it still returns 404 after 3 tries a minute apart, mention it in the email; GitHub Pages sometimes needs a few minutes.
 
 ## Step 7 — email Tomer
@@ -109,7 +128,8 @@ Also validate the JSON files after editing them: `node -e "JSON.parse(require('f
   5. The music link (`https://www.youtube.com/watch?v=<id>`, performer) if there is music.
   6. Estimated reading time (story words ÷ 100 ≈ minutes, plus 2 for the questions).
   7. Library: `https://tomershuss.github.io/Adam-Ella-Stories/e/`
-  8. Last line, exactly:
+  8. One line about narration: `Narration recorded (ElevenLabs, <voice>, <chars> characters)` or `Narration not recorded: <reason>`.
+  9. Last line, exactly:
      `לא אהבת? פתח את הספרייה ובחר סיפור ישן — או תענה כאן במה לשנות ואני אבנה מחדש בריצה הבאה.`
 
 If Gmail is unavailable, still publish (Step 6) and report the missing email in your final summary.
