@@ -713,6 +713,8 @@ html[dir="ltr"] .arrow.next svg{transform:scaleX(-1)}
 
   /* speech */
   var synth=window.speechSynthesis, speaking=false, readAll=false, voice=null, voiceChecked=false;
+  var GAP=900, GAP_REFRAIN=1400, GAP_PAGE=1600; /* ms of quiet between sentences / after the refrain / between pages */
+  function afterGap(el,fn){ var ms=el&&el.classList.contains('refrain')?GAP_REFRAIN:GAP; setTimeout(function(){ if(speaking) fn() },ms) }
   function pickVoice(){
     if(!synth) return null; var vs=synth.getVoices(); if(!vs.length) return null;
     var pref=lang==='he'?['he-il','he','iw']:['en-gb','en-us','en'];
@@ -736,13 +738,13 @@ html[dir="ltr"] .arrow.next svg{transform:scaleX(-1)}
       clearHL(); if(k>=sents.length){ then&&then(); return }
       var el=sents[k++]; show(el);
       if(files){ /* recorded narration */
-        player.onended=function(){ if(speaking) nextSent() }; player.onerror=function(){ if(speaking) nextSent() };
+        player.onended=function(){ afterGap(el,nextSent) }; player.onerror=function(){ if(speaking) nextSent() };
         player.src=audioBase+files[k-1]; var p=player.play(); if(p&&p.catch) p.catch(function(){ if(speaking) nextSent() });
         return;
       }
       var u=new SpeechSynthesisUtterance(el.textContent.replace(/\.\.\./g,', '));
       u.lang=voice?voice.lang:(lang==='he'?'he-IL':'en-US'); if(voice) u.voice=voice; u.rate=0.9; u.pitch=1;
-      u.onend=function(){ if(speaking) nextSent() }; u.onerror=function(){ if(speaking) nextSent() };
+      u.onend=function(){ afterGap(el,nextSent) }; u.onerror=function(){ if(speaking) nextSent() };
       synth.speak(u);
     }
     nextSent();
@@ -758,7 +760,7 @@ html[dir="ltr"] .arrow.next svg{transform:scaleX(-1)}
       }
       readAll=!!all; setReadUI(true);
       (function loop(){ speakPage(cur,function(){ if(!speaking) return;
-        if(readAll&&cur<pages.length-1){ go(cur+1,false); setTimeout(loop,700) } else stopSpeech(); }) })();
+        if(readAll&&cur<pages.length-1){ go(cur+1,false); setTimeout(function(){ if(speaking) loop() },GAP_PAGE) } else stopSpeech(); }) })();
     });
   }
   readBtn.addEventListener('click',function(){ if(speaking) stopSpeech(); else startRead(false) });
