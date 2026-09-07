@@ -1,17 +1,40 @@
 {
-  "next_n": 2,
-  "next_lang": "en",
+  "next_n": 3,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
   "timezone": "Asia/Jerusalem",
   "city": "Tel Aviv",
   "kids": [
-    { "name": "Adam", "age": 4, "f": false },
-    { "name": "Ella", "age": 2, "f": true }
+    {
+      "name": "Adam",
+      "age": 4,
+      "f": false
+    },
+    {
+      "name": "Ella",
+      "age": 2,
+      "f": true
+    }
   ],
-  "languages": ["he", "en"],
-  "domains": ["מדע", "טבע וחיות", "חלל", "גוף האדם", "אומנות", "מוזיקה", "היסטוריה", "גיאוגרפיה", "מתמטיקה", "הנדסה", "רגשות וחברות"],
+  "languages": [
+    "he",
+    "en"
+  ],
+  "domains": [
+    "מדע",
+    "טבע וחיות",
+    "חלל",
+    "גוף האדם",
+    "אומנות",
+    "מוזיקה",
+    "היסטוריה",
+    "גיאוגרפיה",
+    "מתמטיקה",
+    "הנדסה",
+    "רגשות וחברות"
+  ],
   "history": [
     {
       "n": 1,
@@ -20,20 +43,20 @@
       "domain": "חלל",
       "lang": "he",
       "summary": "Tuli, a small sea turtle on the Tel Aviv beach, notices the sea coming and going. Grandma turtle explains that the Moon's gentle pull makes the tides; here the sea moves only a turtle's step, in far places it climbs a giant staircase. Refrain: ששש... הים בא. ששש... הים הולך. Music: Debussy, Clair de lune.",
-      "music": { "title": "Debussy – Clair de lune", "youtube_id": "BubaEmJg4so" }
+      "music": {
+        "title": "Debussy – Clair de lune",
+        "youtube_id": "BubaEmJg4so"
+      }
+    },
+    {
+      "n": 2,
+      "date": "2026-09-08",
+      "title": "Mira and the Magnet That Loved Metal",
+      "domain": "מדע",
+      "lang": "en",
+      "summary": "Mira, four, is given a little red horseshoe magnet from her grandfather's toolbox. It grabs the spoon and the nail but ignores wood, paper, plastic and glass, and she is afraid it is broken; sorting a click pile and a quiet pile she finds the real rule. The true fact: a magnet only pulls things with iron inside (iron, steel, nickel, cobalt), which is why the aluminium can and the copper coin stay put even though they are metal. Refrain: Click! The magnet grabs. Shhh. The magnet lets go. No music.",
+      "music": null
     }
   ],
-  "menu": {
-    "n": 2,
-    "date": "2026-09-08",
-    "lang": "en",
-    "options": [
-      {"k": 1, "title": "Mira and the Magnet That Loved Metal", "summary": "A curious girl discovers that her grandfather's little magnet only wants to hug spoons and nails, never wood or paper, and learns about the invisible pull called magnetism.", "domain": "מדע", "music": null},
-      {"k": 2, "title": "Pip the Firefly's First Light", "summary": "A small firefly who can't make his light glow yet watches his family blink across the garden and discovers, ever so gently, how to switch on his own quiet glow.", "domain": "טבע וחיות", "music": null},
-      {"k": 3, "title": "Little Leo and the Rainbow Puddle", "summary": "A boy who only ever paints blue skies steps in a puddle after the rain and discovers the whole rainbow hiding upside down in the water.", "domain": "אומנות", "music": null},
-      {"k": 4, "title": "Ella Duckling and the Big Bass Drum", "summary": "A little duckling at a park bandstand is startled by a booming drum until she learns it is only a friendly instrument that goes boom when a soft mallet taps its skin.", "domain": "מוזיקה", "music": "Johann Strauss Sr. – Radetzky March (listen for the steady drum beats)"},
-      {"k": 5, "title": "Yara the Camel Crosses the Golden Dunes", "summary": "A young camel walks across the desert at sunset toward a starlit oasis and discovers what she is really carrying in the hump on her back.", "domain": "גיאוגרפיה", "music": null}
-    ],
-    "default_k": 2
-  }
+  "menu": null
 }

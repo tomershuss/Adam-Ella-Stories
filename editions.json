@@ -1,3 +1,18 @@
 [
-  { "n": 1, "date": "2026-09-07", "title": "טולי והים שבא והולך", "domain": "חלל", "lang": "he", "path": "e/001/" }
+  {
+    "n": 1,
+    "date": "2026-09-07",
+    "title": "טולי והים שבא והולך",
+    "domain": "חלל",
+    "lang": "he",
+    "path": "e/001/"
+  },
+  {
+    "n": 2,
+    "date": "2026-09-08",
+    "title": "Mira and the Magnet That Loved Metal",
+    "domain": "מדע",
+    "lang": "en",
+    "path": "e/002/"
+  }
 ]
