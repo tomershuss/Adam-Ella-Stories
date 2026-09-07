@@ -59,18 +59,31 @@ const pad = (n) => String(n).padStart(2, '0');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // Sentences per page, in the exact order the engine reads them (every element with class "s", SVGs removed).
+// Tone: eleven_v3 understands direction tags inside the text, e.g. "[softly][slowly] text". The story sets a default
+// with data-tone="…" on <main>, and any sentence can override it with its own data-tone="…" (comma-separated words).
+// data-tone="" on a sentence means: no tag at all. Tags are only added for eleven_v3* models; older models would read them aloud.
+const TAGS_OK = /^eleven_v3/.test(MODEL);
+const toTags = (tone) => (tone || '').split(',').map((s) => s.trim()).filter(Boolean).map((s) => `[${s}]`).join('');
 function extract(html) {
   const lang = (/<html[^>]*\blang="([a-z]{2})/i.exec(html) || [, 'he'])[1];
   const main = html.slice(html.indexOf('<main'), html.indexOf('</main>'));
+  const mainTone = (/^<main[^>]*\bdata-tone="([^"]*)"/.exec(main) || [, ''])[1];
   const pages = [...main.matchAll(/<section class="page"[^>]*>([\s\S]*?)<\/section>/g)]
     .map((m) => m[1].replace(/<svg[\s\S]*?<\/svg>/g, ''))
-    .map((p) => [...p.matchAll(/<(p|li|h1|h2)\b[^>]*class="s[^"]*"[^>]*>([\s\S]*?)<\/\1>/g)].map((m) => decode(m[2])));
+    .map((p) => [...p.matchAll(/<(p|li|h1|h2)\b([^>]*\bclass="s[^"]*"[^>]*)>([\s\S]*?)<\/\1>/g)].map((m) => {
+      const own = /\bdata-tone="([^"]*)"/.exec(m[2]);
+      const tone = own ? own[1] : mainTone;
+      const text = decode(m[3]);
+      return TAGS_OK && tone ? `${toTags(tone)} ${text}` : text;
+    }));
   return { lang, pages };
 }
 
 async function tts(text, lang) {
   const url = `https://api.elevenlabs.io/v1/text-to-speech/${VOICE}?output_format=${FORMAT}`;
-  const body = { text, model_id: MODEL, voice_settings: { stability: 0.5, similarity_boost: 0.75 } };
+  // stability for v3: 0.0 creative (most expressive), 0.5 natural, 1.0 robust. Override with ELEVENLABS_STABILITY.
+  const stability = process.env.ELEVENLABS_STABILITY ? parseFloat(process.env.ELEVENLABS_STABILITY) : 0.5;
+  const body = { text, model_id: MODEL, voice_settings: { stability, similarity_boost: 0.75 } };
   if (/v2_5|flash|turbo/.test(MODEL)) body.language_code = lang === 'he' ? 'he' : 'en';
   for (let attempt = 1; attempt <= 4; attempt++) {
     const res = await fetch(url, { method: 'POST', headers: { 'xi-api-key': KEY, 'content-type': 'application/json', accept: 'audio/mpeg' }, body: JSON.stringify(body) });
@@ -86,7 +99,7 @@ async function buildStory(dir) {
   if (!fs.existsSync(file)) { console.error(`no ${file}`); return { chars: 0, made: 0 }; }
   const { lang, pages } = extract(fs.readFileSync(file, 'utf8'));
   if (DRY) { // no API calls, nothing written: show what would be narrated
-    let chars = 0; pages.forEach((p, i) => { p.forEach((t) => (chars += t.length)); console.log(`  page ${i + 1}: ${p.length} sentences${p.length ? ' · ' + p[0].slice(0, 40) + '…' : ''}`); });
+    let chars = 0; pages.forEach((p, i) => { p.forEach((t) => (chars += t.length)); console.log(`  page ${i + 1}: ${p.length} sentences${p.length ? ' · ' + p[0].slice(0, 60) + '…' : ''}`); });
     console.log(`${dir} (${lang}): ${pages.length} pages, ${pages.flat().length} sentences, ${chars} characters`);
     return { chars, made: 0 };
   }
