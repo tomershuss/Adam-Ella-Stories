@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#1c1a2b">
+<title>סיפור לילה · כל הסיפורים</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1c1a2b;--bg2:#26233a;--ink:#f4e9d8;--ink-soft:#c9bfae;--accent:#fbe7a1;--line:#3d3857;--btn:#332f4d;--shadow:0 6px 24px rgba(0,0,0,.35)}
+html[data-theme="light"]{--bg:#f7efe2;--bg2:#fff8ec;--ink:#2a2438;--ink-soft:#5d556f;--accent:#d98b4a;--line:#e3d4bb;--btn:#efe1c9;--shadow:0 6px 24px rgba(90,70,40,.15)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Heebo","Rubik",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:20px;line-height:1.4}
+header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px;padding-top:calc(14px + env(safe-area-inset-top))}
+h1{font-size:1.5em;margin:0;color:var(--accent)}
+header p{margin:2px 0 0;color:var(--ink-soft);font-size:.75em}
+.iconbtn{background:var(--btn);color:var(--ink);border:0;border-radius:999px;width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.iconbtn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+main{padding:6px 14px 40px;max-width:1100px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{display:flex;gap:14px;align-items:stretch;background:var(--bg2);border-radius:18px;padding:12px;text-decoration:none;color:inherit;box-shadow:var(--shadow);min-height:140px}
+.card:active{transform:scale(.99)}
+.thumb{flex:0 0 96px;width:96px;border-radius:12px;overflow:hidden;background:#22305c;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;font-size:1.6em}
+.thumb svg{width:100%;height:100%;display:block}
+.info{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.title{font-weight:700;font-size:1.1em;line-height:1.25;color:var(--accent);margin-bottom:6px}
+.sub{color:var(--ink-soft);font-size:.75em}
+.sub b{color:var(--ink);font-weight:500}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:1px 10px;margin-inline-start:6px;font-size:.9em}
+.empty{color:var(--ink-soft);text-align:center;padding:40px 10px}
+.new{font-size:.7em;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:0 8px;margin-inline-start:6px;vertical-align:middle}
+@media (prefers-reduced-motion:reduce){.thumb *{animation:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>סיפור לילה</h1><p>כל הסיפורים, החדש למעלה</p></div>
+  <button class="iconbtn" id="themeBtn" type="button" aria-label="בהירות"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</header>
+<main><div class="grid" id="grid"><div class="empty" id="loading">טוען…</div></div></main>
+<script>
+(function(){
+  var html=document.documentElement;
+  function setTheme(t){ if(t==='light') html.setAttribute('data-theme','light'); else html.removeAttribute('data-theme'); try{localStorage.setItem('sl-theme',t)}catch(e){} }
+  try{ setTheme(localStorage.getItem('sl-theme')||'dark') }catch(e){}
+  document.getElementById('themeBtn').addEventListener('click',function(){ setTheme(html.getAttribute('data-theme')==='light'?'dark':'light') });
+
+  var grid=document.getElementById('grid');
+  var DOMAIN_EN={"מדע":"Science","טבע וחיות":"Nature & animals","חלל":"Space","גוף האדם":"The body","אומנות":"Art","מוזיקה":"Music","היסטוריה":"History","גיאוגרפיה":"Geography","מתמטיקה":"Math","הנדסה":"Engineering","רגשות וחברות":"Feelings & friends"};
+  function pad(n){ return String(n).padStart(3,'0') }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c] }) }
+
+  fetch('../editions.json',{cache:'no-store'}).then(function(r){ return r.json() }).then(function(list){
+    list.sort(function(a,b){ return b.n-a.n });
+    grid.innerHTML='';
+    if(!list.length){ grid.innerHTML='<div class="empty">עוד אין סיפורים. הראשון יגיע הערב.</div>'; return }
+    list.forEach(function(ed,idx){
+      var a=document.createElement('a'); a.className='card'; a.href='../'+ed.path; if(ed.lang==='en'){ a.dir='ltr'; a.lang='en' }
+      var dom=ed.lang==='en'?(DOMAIN_EN[ed.domain]||ed.domain):ed.domain;
+      a.innerHTML='<div class="thumb" id="th'+ed.n+'">'+ed.n+'</div><div class="info"><div class="title">'+esc(ed.title)+(idx===0?'<span class="new">'+(ed.lang==='en'?'new':'חדש')+'</span>':'')+'</div>'+
+        '<div class="sub"><b>#'+ed.n+'</b> · '+esc(ed.date)+'<span class="badge">'+esc(dom)+'</span></div></div>';
+      grid.appendChild(a);
+      thumb(ed);
+    });
+  }).catch(function(){ grid.innerHTML='<div class="empty">לא הצלחתי לטעון את רשימת הסיפורים.</div>' });
+
+  /* Thumbnail: the first illustration of the story, pulled from its own HTML (symbols + first page SVG), ids prefixed to avoid clashes */
+  function thumb(ed){
+    fetch('../'+ed.path+'index.html',{cache:'force-cache'}).then(function(r){ return r.text() }).then(function(src){
+      var doc=new DOMParser().parseFromString(src,'text/html');
+      var defs=doc.getElementById('defs'); var art=doc.querySelector('.page .art svg'); if(!defs||!art) return;
+      var p='s'+ed.n+'-';
+      var inner=defs.innerHTML+art.innerHTML;
+      inner=inner.replace(/\bid="([^"]+)"/g,'id="'+p+'$1"').replace(/href="#([^"]+)"/g,'href="#'+p+'$1"').replace(/url\(#([^)]+)\)/g,'url(#'+p+'$1)');
+      var vb=art.getAttribute('viewBox')||'0 0 300 400';
+      var el=document.getElementById('th'+ed.n); if(!el) return;
+      el.innerHTML='<svg viewBox="'+vb+'" preserveAspectRatio="xMidYMid slice" aria-hidden="true">'+inner+'</svg>';
+    }).catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>

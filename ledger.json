@@ -1,0 +1,27 @@
+{
+  "next_n": 2,
+  "next_lang": "en",
+  "parent_email": "tomer@shussman.net",
+  "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
+  "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
+  "timezone": "Asia/Jerusalem",
+  "city": "Tel Aviv",
+  "kids": [
+    { "name": "Adam", "age": 4, "f": false },
+    { "name": "Ella", "age": 2, "f": true }
+  ],
+  "languages": ["he", "en"],
+  "domains": ["מדע", "טבע וחיות", "חלל", "גוף האדם", "אומנות", "מוזיקה", "היסטוריה", "גיאוגרפיה", "מתמטיקה", "הנדסה", "רגשות וחברות"],
+  "history": [
+    {
+      "n": 1,
+      "date": "2026-09-07",
+      "title": "טולי והים שבא והולך",
+      "domain": "חלל",
+      "lang": "he",
+      "summary": "Tuli, a small sea turtle on the Tel Aviv beach, notices the sea coming and going. Grandma turtle explains that the Moon's gentle pull makes the tides; here the sea moves only a turtle's step, in far places it climbs a giant staircase. Refrain: ששש... הים בא. ששש... הים הולך. Music: Debussy, Clair de lune.",
+      "music": { "title": "Debussy – Clair de lune", "youtube_id": "BubaEmJg4so" }
+    }
+  ],
+  "menu": null
+}
