@@ -28,7 +28,7 @@ const flagVal = (f) => { const i = argv.indexOf(f); return i >= 0 ? (argv[i + 1]
 const LIST = argv.includes('--list-voices');          // your voices (premade + added), with labels
 const LIBRARY = flagVal('--library');                  // search the public voice library, e.g. --library he
 const AUDITION = flagVal('--audition');                // --audition id1,id2 [e/NNN]: record 2 sample sentences per voice into audition/
-const arg = argv.find((a, i) => !a.startsWith('--') && argv[i - 1] !== '--library' && argv[i - 1] !== '--audition');
+const arg = argv.find((a, i) => (a === '--all' || !a.startsWith('--')) && argv[i - 1] !== '--library' && argv[i - 1] !== '--audition');
 if (!arg && !LIST && LIBRARY === null && AUDITION === null) {
   console.error('usage: make-audio.mjs [--dry-run] <e/NNN | --all>\n       make-audio.mjs --list-voices | --library <lang> | --audition <id,id,...> [e/NNN]'); process.exit(2);
 }
