@@ -23,5 +23,17 @@
       "music": { "title": "Debussy – Clair de lune", "youtube_id": "BubaEmJg4so" }
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 2,
+    "date": "2026-09-08",
+    "lang": "en",
+    "options": [
+      {"k": 1, "title": "Mira and the Magnet That Loved Metal", "summary": "A curious girl discovers that her grandfather's little magnet only wants to hug spoons and nails, never wood or paper, and learns about the invisible pull called magnetism.", "domain": "מדע", "music": null},
+      {"k": 2, "title": "Pip the Firefly's First Light", "summary": "A small firefly who can't make his light glow yet watches his family blink across the garden and discovers, ever so gently, how to switch on his own quiet glow.", "domain": "טבע וחיות", "music": null},
+      {"k": 3, "title": "Little Leo and the Rainbow Puddle", "summary": "A boy who only ever paints blue skies steps in a puddle after the rain and discovers the whole rainbow hiding upside down in the water.", "domain": "אומנות", "music": null},
+      {"k": 4, "title": "Ella Duckling and the Big Bass Drum", "summary": "A little duckling at a park bandstand is startled by a booming drum until she learns it is only a friendly instrument that goes boom when a soft mallet taps its skin.", "domain": "מוזיקה", "music": "Johann Strauss Sr. – Radetzky March (listen for the steady drum beats)"},
+      {"k": 5, "title": "Yara the Camel Crosses the Golden Dunes", "summary": "A young camel walks across the desert at sunset toward a starlit oasis and discovers what she is really carrying in the hump on her back.", "domain": "גיאוגרפיה", "music": null}
+    ],
+    "default_k": 2
+  }
 }
