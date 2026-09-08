@@ -58,5 +58,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 3,
+    "date": "2026-09-08",
+    "lang": "he",
+    "options": [
+      {
+        "k": 1,
+        "title": "קיפי לומדת להתרווח",
+        "summary": "A little hedgehog named Kipi is scared of every rustling sound and curls into a tight ball, until a wise old tortoise helps her learn which sounds are safe, and she finally uncurls to make a friend.",
+        "domain": "טבע וחיות",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "הלב הקטן של תום",
+        "summary": "Before bed, Tom presses his hand to his chest and feels his heart racing from play, then notices it grow slow and calm as he breathes and settles into sleep.",
+        "domain": "גוף האדם",
+        "music": "Brahms – Wiegenlied (Lullaby)"
+      },
+      {
+        "k": 3,
+        "title": "פעמוני הזהב של נוגה",
+        "summary": "Noga discovers a row of bells of different sizes in Grandpa's attic and learns that big bells sing low notes while tiny bells sing high ones, so she rings them into a soft bedtime tune.",
+        "domain": "מוזיקה",
+        "music": "Tchaikovsky – Dance of the Sugar Plum Fairy (celesta bells)"
+      },
+      {
+        "k": 4,
+        "title": "הגמל שצף בים המלח",
+        "summary": "A curious young camel named Sahar visits the Dead Sea for the first time, worried she'll sink, but discovers the extra-salty water gently holds her up so she floats without even trying.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "השמיכה שיש בה מקום לשניים",
+        "summary": "Danny doesn't want to share his favorite blanket with his little sister at story time, but discovers that snuggling under it together makes it warmer and cozier for them both.",
+        "domain": "רגשות וחברות",
+        "music": null
+      }
+    ],
+    "default_k": 2
+  }
 }
