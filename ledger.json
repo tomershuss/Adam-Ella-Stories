@@ -1,6 +1,6 @@
 {
-  "next_n": 3,
-  "next_lang": "he",
+  "next_n": 4,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -56,49 +56,19 @@
       "lang": "en",
       "summary": "Mira, four, is given a little red horseshoe magnet from her grandfather's toolbox. It grabs the spoon and the nail but ignores wood, paper, plastic and glass, and she is afraid it is broken; sorting a click pile and a quiet pile she finds the real rule. The true fact: a magnet only pulls things with iron inside (iron, steel, nickel, cobalt), which is why the aluminium can and the copper coin stay put even though they are metal. Refrain: Click! The magnet grabs. Shhh. The magnet lets go. No music.",
       "music": null
+    },
+    {
+      "n": 3,
+      "date": "2026-09-08",
+      "title": "הלב הקטן של תום",
+      "domain": "גוף האדם",
+      "lang": "he",
+      "summary": "Tom, four, jumps and dances with Muki the cat before bed, then lies down, feels a fast bum-bum in his chest and is frightened by it. His mother explains that the heart is a muscle about the size of his own fist which sends blood everywhere in the body; it works faster when the muscles ask for more air, and it calms down when he breathes slowly with her. The true fact: heart rate rises with effort and falls at rest, a child's heart beats faster than a grown-up's (and a cat's faster still), and the heart keeps working even during sleep. Refrain: בום־בום. בום־בום. הלב של תום אומר שלום. Music: Brahms, Wiegenlied (Lullaby), sung by Renée Fleming.",
+      "music": {
+        "title": "Brahms – Wiegenlied (Lullaby), op. 49 no. 4 (Renée Fleming, Hartmut Höll)",
+        "youtube_id": "3nNvz8UFEHY"
+      }
     }
   ],
-  "menu": {
-    "n": 3,
-    "date": "2026-09-08",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "קיפי לומדת להתרווח",
-        "summary": "A little hedgehog named Kipi is scared of every rustling sound and curls into a tight ball, until a wise old tortoise helps her learn which sounds are safe, and she finally uncurls to make a friend.",
-        "domain": "טבע וחיות",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "הלב הקטן של תום",
-        "summary": "Before bed, Tom presses his hand to his chest and feels his heart racing from play, then notices it grow slow and calm as he breathes and settles into sleep.",
-        "domain": "גוף האדם",
-        "music": "Brahms – Wiegenlied (Lullaby)"
-      },
-      {
-        "k": 3,
-        "title": "פעמוני הזהב של נוגה",
-        "summary": "Noga discovers a row of bells of different sizes in Grandpa's attic and learns that big bells sing low notes while tiny bells sing high ones, so she rings them into a soft bedtime tune.",
-        "domain": "מוזיקה",
-        "music": "Tchaikovsky – Dance of the Sugar Plum Fairy (celesta bells)"
-      },
-      {
-        "k": 4,
-        "title": "הגמל שצף בים המלח",
-        "summary": "A curious young camel named Sahar visits the Dead Sea for the first time, worried she'll sink, but discovers the extra-salty water gently holds her up so she floats without even trying.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "השמיכה שיש בה מקום לשניים",
-        "summary": "Danny doesn't want to share his favorite blanket with his little sister at story time, but discovers that snuggling under it together makes it warmer and cozier for them both.",
-        "domain": "רגשות וחברות",
-        "music": null
-      }
-    ],
-    "default_k": 2
-  }
+  "menu": null
 }
