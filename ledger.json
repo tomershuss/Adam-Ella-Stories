@@ -70,5 +70,47 @@
       }
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 4,
+    "date": "2026-09-09",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "Sol the Snail and the Silver Trail",
+        "summary": "Sol worries she is too slow to reach the top of the fence before dark, until she discovers that her own shiny slime trail helps her grip and climb steadily.",
+        "domain": "טבע וחיות",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "Nili's Jar of Blue and Yellow",
+        "summary": "Nili paints the evening sky with blue and yellow watercolors and is delighted when they swirl together in her jar to become green.",
+        "domain": "אומנות",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "Kesem the Camel and the Sea of Sand",
+        "summary": "Kesem wonders why the desert hills look different every morning, and her mother shows her how the wind slowly moves the sand to reshape the dunes.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "Five Ducklings and the Line by the Pond",
+        "summary": "Zuzu the duckling can't figure out why she and her sisters always swim behind their mother in the same order, until she spots the simple size pattern that explains it.",
+        "domain": "מתמטיקה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "Yuval and the Loud Balloon",
+        "summary": "Yuval is startled when his balloon pops at the party, and his friend helps him find how a few slow breaths can bring a big fright back down to calm.",
+        "domain": "רגשות וחברות",
+        "music": null
+      }
+    ],
+    "default_k": 1
+  }
 }
