@@ -1,6 +1,6 @@
 {
-  "next_n": 4,
-  "next_lang": "en",
+  "next_n": 5,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -68,49 +68,16 @@
         "title": "Brahms – Wiegenlied (Lullaby), op. 49 no. 4 (Renée Fleming, Hartmut Höll)",
         "youtube_id": "3nNvz8UFEHY"
       }
+    },
+    {
+      "n": 4,
+      "date": "2026-09-09",
+      "title": "Sol the Snail and the Silver Trail",
+      "domain": "טבע וחיות",
+      "lang": "en",
+      "summary": "Sol, a small garden snail, wants to reach the flat board on top of the garden fence to see the first star of the night, but the wood goes straight up and she slides back down and gives up. Nana Snail, old and mossy-shelled, tells her to look behind her at her own long silver trail: her slime holds her like glue when she is still and turns slippery when she pushes, so she practises on a stone and then climbs the post, bit by bit, until she reaches the top and the star. The true fact: a snail's pedal mucus is viscoelastic, gripping like a solid adhesive at rest and flowing like a lubricant under the shear of the foot's muscle waves, which is how snails hold on to vertical walls and still glide forward; most snails move less than about 8 cm a minute. Refrain: Slide and stick. Slide and stick. Little by little, bit by bit. No music.",
+      "music": null
     }
   ],
-  "menu": {
-    "n": 4,
-    "date": "2026-09-09",
-    "lang": "en",
-    "options": [
-      {
-        "k": 1,
-        "title": "Sol the Snail and the Silver Trail",
-        "summary": "Sol worries she is too slow to reach the top of the fence before dark, until she discovers that her own shiny slime trail helps her grip and climb steadily.",
-        "domain": "טבע וחיות",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "Nili's Jar of Blue and Yellow",
-        "summary": "Nili paints the evening sky with blue and yellow watercolors and is delighted when they swirl together in her jar to become green.",
-        "domain": "אומנות",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "Kesem the Camel and the Sea of Sand",
-        "summary": "Kesem wonders why the desert hills look different every morning, and her mother shows her how the wind slowly moves the sand to reshape the dunes.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "Five Ducklings and the Line by the Pond",
-        "summary": "Zuzu the duckling can't figure out why she and her sisters always swim behind their mother in the same order, until she spots the simple size pattern that explains it.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "Yuval and the Loud Balloon",
-        "summary": "Yuval is startled when his balloon pops at the party, and his friend helps him find how a few slow breaths can bring a big fright back down to calm.",
-        "domain": "רגשות וחברות",
-        "music": null
-      }
-    ],
-    "default_k": 1
-  }
+  "menu": null
 }
