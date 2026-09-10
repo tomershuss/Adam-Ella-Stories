@@ -1,6 +1,6 @@
 {
-  "next_n": 5,
-  "next_lang": "he",
+  "next_n": 6,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -77,49 +77,19 @@
       "lang": "en",
       "summary": "Sol, a small garden snail, wants to reach the flat board on top of the garden fence to see the first star of the night, but the wood goes straight up and she slides back down and gives up. Nana Snail, old and mossy-shelled, tells her to look behind her at her own long silver trail: her slime holds her like glue when she is still and turns slippery when she pushes, so she practises on a stone and then climbs the post, bit by bit, until she reaches the top and the star. The true fact: a snail's pedal mucus is viscoelastic, gripping like a solid adhesive at rest and flowing like a lubricant under the shear of the foot's muscle waves, which is how snails hold on to vertical walls and still glide forward; most snails move less than about 8 cm a minute. Refrain: Slide and stick. Slide and stick. Little by little, bit by bit. No music.",
       "music": null
+    },
+    {
+      "n": 5,
+      "date": "2026-09-10",
+      "title": "האורות הרוקדים בארץ הקרח",
+      "domain": "גיאוגרפיה",
+      "lang": "he",
+      "summary": "Sanna, a little girl in a snowy village in the far north, cannot fall asleep on a long winter night, so her grandmother wraps her up and takes her outside into the snow with Nuki, a small reindeer. A thin green line stretches across the sky, widens into a swaying curtain with a soft purple edge, and grandmother explains that it is far higher than the clouds and any aeroplane: tiny sparks fly from the sun, travel a long way, touch the air high above, and the air lights up like a lamp. The true fact: the aurora is made by charged particles from the solar wind striking gases in the upper atmosphere, with its lower edge about 100 km up (a passenger jet flies at only 10-12 km); oxygen glows green and nitrogen blue-purple, and to a watcher it is completely silent. Refrain: אור ירוק. אור סגול. שששש — האורות רוקדים. Music: Sibelius, Valse triste, Turku Philharmonic Orchestra.",
+      "music": {
+        "title": "Jean Sibelius – Valse triste, Op. 44 (Turku Philharmonic Orchestra)",
+        "youtube_id": "uoJSzmU7pBQ"
+      }
     }
   ],
-  "menu": {
-    "n": 5,
-    "date": "2026-09-10",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "טליה והגלגל שמרים",
-        "summary": "Talia wants to help lift a heavy bucket of water for Grandpa and discovers that winding a rope around a wheel — a pulley — makes the heavy work feel light.",
-        "domain": "הנדסה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "הפינה השקטה של נועה",
-        "summary": "Noa feels alone at a noisy playground until she finds a quiet corner where a shy new friend is drawing, and together they learn that saying a feeling out loud can make it smaller.",
-        "domain": "רגשות וחברות",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "דני סופר כוכבים",
-        "summary": "Before sleep, Dani counts the stars appearing one by one over the roof and notices they blink in a repeating pattern, bright-soft-bright-soft, and grandma calls it a pattern.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "האורות הרוקדים בארץ הקרח",
-        "summary": "Little Sanna in the far north can't fall asleep until she watches soft green and purple lights ripple silently across the night sky, and Grandmother explains they are the aurora — sunlight's tiny particles glowing high above the snow.",
-        "domain": "גיאוגרפיה",
-        "music": "Jean Sibelius – Valse triste (soft strings, evokes the quiet shimmering lights)"
-      },
-      {
-        "k": 5,
-        "title": "תום הקטן שרצה לבקוע ביצים",
-        "summary": "As a curious boy, young Thomas Edison sits for hours on a nest of goose eggs to see if he can hatch them himself, and learns that eggs need a steady, gentle warmth to become chicks.",
-        "domain": "היסטוריה",
-        "music": null
-      }
-    ],
-    "default_k": 4
-  }
+  "menu": null
 }
