@@ -1,6 +1,6 @@
 {
-  "next_n": 6,
-  "next_lang": "en",
+  "next_n": 7,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -89,49 +89,19 @@
         "title": "Jean Sibelius – Valse triste, Op. 44 (Turku Philharmonic Orchestra)",
         "youtube_id": "uoJSzmU7pBQ"
       }
+    },
+    {
+      "n": 6,
+      "date": "2026-09-11",
+      "title": "Nina and the Sleepy Violin",
+      "domain": "מוזיקה",
+      "lang": "en",
+      "summary": "Nina, four, cannot get Bo her stuffed bear to sleep, and her own loud fast song only keeps him more awake, until Grandpa brings in the small violin he played as a child. He shows her that only the piece of string between her finger and the bow is singing: finger close to the bow makes that piece short and the note high, finger far away makes it long and the note low, and on the fattest string she finds a low soft hum that closes Bo's eyes. The true fact: a vibrating string's pitch is inversely proportional to its length, so pressing a finger shortens the vibrating part and raises the note, while a string's thickness and tension set the pitch of the four open strings (and a cello's strings, about twice as long as a violin's, sound much deeper). Refrain: Long string, low song. Short string, high song. Hmmmm. Music: Saint-Saens, The Swan, Mischa Maisky.",
+      "music": {
+        "title": "Camille Saint-Saens - Le Cygne (The Swan) from Le carnaval des animaux (Mischa Maisky, cello; DW Classical Music)",
+        "youtube_id": "xPsOt6fLDFY"
+      }
     }
   ],
-  "menu": {
-    "n": 6,
-    "date": "2026-09-11",
-    "lang": "en",
-    "options": [
-      {
-        "k": 1,
-        "title": "Isaac and the Rainbow in the Window",
-        "summary": "A boy finds a glass prism on his windowsill and discovers that a single beam of moonlight can be gently coaxed into every color of the rainbow.",
-        "domain": "היסטוריה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "Nina and the Sleepy Violin",
-        "summary": "Nina wants her stuffed bear to fall asleep, and by trying strings of different lengths on a little violin she learns how to find the softest, lowest note for a bedtime song.",
-        "domain": "מוזיקה",
-        "music": "Saint-Saëns, \"The Swan\" (Le Cygne) from Carnival of the Animals"
-      },
-      {
-        "k": 3,
-        "title": "Lior Counts the Flower's Petals",
-        "summary": "Lior can't sleep until she counts every petal on the flowers in the garden, and grandpa shows her the same quiet number pattern hiding in petals, pinecones, and her own fingers.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "Ori and the Great Big Seesaw",
-        "summary": "Ori can't lift his heavy friend on the seesaw until he learns that sliding closer to the middle makes the same push feel lighter.",
-        "domain": "הנדסה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "Fox and Hare Share One Blanket",
-        "summary": "Fox and Hare have only one small blanket on a cold night, and instead of pulling it apart they curl up close together and discover that sharing keeps them both warmer.",
-        "domain": "רגשות וחברות",
-        "music": null
-      }
-    ],
-    "default_k": 2
-  }
+  "menu": null
 }
