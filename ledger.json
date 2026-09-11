@@ -91,5 +91,47 @@
       }
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 6,
+    "date": "2026-09-11",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "Isaac and the Rainbow in the Window",
+        "summary": "A boy finds a glass prism on his windowsill and discovers that a single beam of moonlight can be gently coaxed into every color of the rainbow.",
+        "domain": "היסטוריה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "Nina and the Sleepy Violin",
+        "summary": "Nina wants her stuffed bear to fall asleep, and by trying strings of different lengths on a little violin she learns how to find the softest, lowest note for a bedtime song.",
+        "domain": "מוזיקה",
+        "music": "Saint-Saëns, \"The Swan\" (Le Cygne) from Carnival of the Animals"
+      },
+      {
+        "k": 3,
+        "title": "Lior Counts the Flower's Petals",
+        "summary": "Lior can't sleep until she counts every petal on the flowers in the garden, and grandpa shows her the same quiet number pattern hiding in petals, pinecones, and her own fingers.",
+        "domain": "מתמטיקה",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "Ori and the Great Big Seesaw",
+        "summary": "Ori can't lift his heavy friend on the seesaw until he learns that sliding closer to the middle makes the same push feel lighter.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "Fox and Hare Share One Blanket",
+        "summary": "Fox and Hare have only one small blanket on a cold night, and instead of pulling it apart they curl up close together and discover that sharing keeps them both warmer.",
+        "domain": "רגשות וחברות",
+        "music": null
+      }
+    ],
+    "default_k": 2
+  }
 }
