@@ -103,5 +103,47 @@
       }
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 7,
+    "date": "2026-09-12",
+    "lang": "he",
+    "options": [
+      {
+        "k": 1,
+        "title": "נועה והצבעים שהתחבקו",
+        "summary": "A little girl mixing paint before bed discovers that red and blue hug together to make purple, the color of the evening sky.",
+        "domain": "אומנות",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "אדיסון הקטן ואור-הלילה הרך",
+        "summary": "A curious boy inspired by young Thomas Edison tries to find a thread that will glow softly and stay lit through a long, quiet night.",
+        "domain": "היסטוריה",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "דני ומגדל הצורות היציב",
+        "summary": "Before bed, a boy stacks building blocks and learns that triangles hold steady where circles and squares slide and tumble.",
+        "domain": "מתמטיקה",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "עידו והדלי שעלה לבד",
+        "summary": "A boy watches his grandfather use a simple wheel-and-rope pulley by the well so the heavy bucket rises with a gentle pull downward instead of a hard lift up.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "יונה ולביא אומרים איך הרגישו",
+        "summary": "A little hedgehog and a rabbit who quarreled over a toy discover that naming a feeling out loud makes the sad, tight feeling grow smaller.",
+        "domain": "רגשות וחברות",
+        "music": null
+      }
+    ],
+    "default_k": 2
+  }
 }
