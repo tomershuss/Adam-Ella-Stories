@@ -1,6 +1,6 @@
 {
-  "next_n": 7,
-  "next_lang": "he",
+  "next_n": 8,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -101,49 +101,16 @@
         "title": "Camille Saint-Saens - Le Cygne (The Swan) from Le carnaval des animaux (Mischa Maisky, cello; DW Classical Music)",
         "youtube_id": "xPsOt6fLDFY"
       }
+    },
+    {
+      "n": 7,
+      "date": "2026-09-12",
+      "title": "אדיסון הקטן ואור-הלילה הרך",
+      "domain": "היסטוריה",
+      "lang": "he",
+      "summary": "Uri, four and full of questions, cannot fall asleep because his room is either pitch dark or painfully bright. Grandpa Dan tries the big ceiling light (too strong) and a pocket torch (a circle that will not stay put), then brings an old wooden box holding a small glass lamp with a coiled thread inside, and tells him how Edison and his helpers put thread after thread into glass until a scorched cotton thread finally stayed alight for hours and hours. Grandpa sets the little lamp by the bed, its thread glows warm orange, Uri watches his own soft shadow on the wall and falls asleep deciding that tomorrow he will try, and try again, to build a tall tower. The true fact: Edison did not invent the first electric light, but in October 1879 his team found a carbonized cotton thread filament that burned for many hours, and a few months later carbonized bamboo lasted hundreds of hours; the practical part was the whole system he built around it. Refrain: עוד חוט. ועוד חוט. ואז נדלק אור רך.",
+      "music": null
     }
   ],
-  "menu": {
-    "n": 7,
-    "date": "2026-09-12",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "נועה והצבעים שהתחבקו",
-        "summary": "A little girl mixing paint before bed discovers that red and blue hug together to make purple, the color of the evening sky.",
-        "domain": "אומנות",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "אדיסון הקטן ואור-הלילה הרך",
-        "summary": "A curious boy inspired by young Thomas Edison tries to find a thread that will glow softly and stay lit through a long, quiet night.",
-        "domain": "היסטוריה",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "דני ומגדל הצורות היציב",
-        "summary": "Before bed, a boy stacks building blocks and learns that triangles hold steady where circles and squares slide and tumble.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "עידו והדלי שעלה לבד",
-        "summary": "A boy watches his grandfather use a simple wheel-and-rope pulley by the well so the heavy bucket rises with a gentle pull downward instead of a hard lift up.",
-        "domain": "הנדסה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "יונה ולביא אומרים איך הרגישו",
-        "summary": "A little hedgehog and a rabbit who quarreled over a toy discover that naming a feeling out loud makes the sad, tight feeling grow smaller.",
-        "domain": "רגשות וחברות",
-        "music": null
-      }
-    ],
-    "default_k": 2
-  }
+  "menu": null
 }
