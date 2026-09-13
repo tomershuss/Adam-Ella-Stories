@@ -1,6 +1,6 @@
 {
-  "next_n": 8,
-  "next_lang": "en",
+  "next_n": 9,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -109,6 +109,15 @@
       "domain": "היסטוריה",
       "lang": "he",
       "summary": "Uri, four and full of questions, cannot fall asleep because his room is either pitch dark or painfully bright. Grandpa Dan tries the big ceiling light (too strong) and a pocket torch (a circle that will not stay put), then brings an old wooden box holding a small glass lamp with a coiled thread inside, and tells him how Edison and his helpers put thread after thread into glass until a scorched cotton thread finally stayed alight for hours and hours. Grandpa sets the little lamp by the bed, its thread glows warm orange, Uri watches his own soft shadow on the wall and falls asleep deciding that tomorrow he will try, and try again, to build a tall tower. The true fact: Edison did not invent the first electric light, but in October 1879 his team found a carbonized cotton thread filament that burned for many hours, and a few months later carbonized bamboo lasted hundreds of hours; the practical part was the whole system he built around it. Refrain: עוד חוט. ועוד חוט. ואז נדלק אור רך.",
+      "music": null
+    },
+    {
+      "n": 8,
+      "date": "2026-09-13",
+      "title": "Ben and the Green That Was Hiding",
+      "domain": "אומנות",
+      "lang": "en",
+      "summary": "Ben, four, wants to paint the green frog he found that morning on a wet leaf in the garden, but his three jars hold only red, yellow and blue and he decides his green is missing. Grandma tells him the green is not missing, it is hiding inside the other colours: a blue blob, a yellow blob on top, stirred round and round, and green comes out, then red and yellow make an orange sun and red and blue a purple night sky for the frog to sleep under. The true fact: red, yellow and blue are the painter's traditional primary colours, which cannot be mixed from other paints, while every pigment works by absorbing part of the light and reflecting the rest, so a mixture reflects only what both pigments reflect (subtractive mixing) - blue and yellow leaving green. Refrain: Swish, swish. Swirl, swirl. Come out, colour, come out! No music.",
       "music": null
     }
   ],
