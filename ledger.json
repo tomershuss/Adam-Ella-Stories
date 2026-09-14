@@ -1,6 +1,6 @@
 {
-  "next_n": 9,
-  "next_lang": "he",
+  "next_n": 10,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -119,49 +119,16 @@
       "lang": "en",
       "summary": "Ben, four, wants to paint the green frog he found that morning on a wet leaf in the garden, but his three jars hold only red, yellow and blue and he decides his green is missing. Grandma tells him the green is not missing, it is hiding inside the other colours: a blue blob, a yellow blob on top, stirred round and round, and green comes out, then red and yellow make an orange sun and red and blue a purple night sky for the frog to sleep under. The true fact: red, yellow and blue are the painter's traditional primary colours, which cannot be mixed from other paints, while every pigment works by absorbing part of the light and reflecting the rest, so a mixture reflects only what both pigments reflect (subtractive mixing) - blue and yellow leaving green. Refrain: Swish, swish. Swirl, swirl. Come out, colour, come out! No music.",
       "music": null
+    },
+    {
+      "n": 9,
+      "date": "2026-09-14",
+      "title": "נופר הדבורה ובית הדבש המושלם",
+      "domain": "מתמטיקה",
+      "lang": "he",
+      "summary": "Nofar, a young bee, builds her very first honey cells out of hard-won wax and makes them round like the moon; five round rooms later she sees the little empty holes left between them, and is heartbroken that her wax went to waste. Grandma Zehava flies her up to the old comb wall, where Nofar counts the corners of one cell: six, and none of them leave a hole. She rebuilds with six-cornered rooms and discovers that two neighbours share one wall, so the wax stretches further. The true fact: honeycomb cells are hexagons, which tile with no gaps and need the least total wall (the least wax) for a given area - the honeycomb theorem, proved by Thomas Hales in 1999 - while wax is costly, roughly 6-8 kg of honey eaten per kg of wax. Refrain: זמזום, זמזום. שש פינות. ואין חורים. No music.",
+      "music": null
     }
   ],
-  "menu": {
-    "n": 9,
-    "date": "2026-09-14",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "נופר הדבורה ובית הדבש המושלם",
-        "summary": "A young bee wants to build her honeycomb cell with squares, but they leave gaps, until her grandmother shows her that hexagons fit together perfectly with no space wasted.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "טופי הסנאי בונה גשר בין הענפים",
-        "summary": "A young squirrel's flat stick bridge keeps wobbling until he learns that adding a triangle brace makes it strong enough to cross safely.",
-        "domain": "הנדסה",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "לוטם והקיפוד הביישן",
-        "summary": "A little fox wants to play with a new hedgehog neighbor who curls up in fear, and learns that sitting quietly and waiting patiently is how a shy friend opens up.",
-        "domain": "רגשות וחברות",
-        "music": "Erik Satie – Gymnopédie No. 1"
-      },
-      {
-        "k": 4,
-        "title": "נצנץ הגחלילית ואור הלילה שלה",
-        "summary": "A little firefly worries her light isn't as bright as her friends', until she learns each firefly's blink pattern is like a name that helps fireflies find each other in the dark.",
-        "domain": "טבע וחיות",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "לביא וים המלח שלא נותן לשקוע",
-        "summary": "A boy visiting the Dead Sea is afraid of the deep water until he discovers that the extra-salty water is so heavy that it holds him up and he floats like a leaf.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      }
-    ],
-    "default_k": 1
-  }
+  "menu": null
 }
