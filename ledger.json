@@ -130,5 +130,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 10,
+    "date": "2026-09-15",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "Leo and the Little Crane",
+        "summary": "Leo can't lift his heavy box of blocks, so his grandpa helps him build a tiny toy crane with a wheel and rope that lifts it slowly with just a gentle pull.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "Mango the Fox Says Hello",
+        "summary": "Mango the shy fox watches the other animals play every evening until a wise owl tells him that a single quiet \"hello\" is enough to start a friendship.",
+        "domain": "רגשות וחברות",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "Why the Stars Blink at Noa",
+        "summary": "Noa asks her father why the stars flicker while the moon stays steady, and learns that their light wobbles as it passes through the moving air high above.",
+        "domain": "חלל",
+        "music": "Mozart – 12 Variations on \"Ah, vous dirai-je, Maman\" (Twinkle Twinkle Little Star), K. 265"
+      },
+      {
+        "k": 4,
+        "title": "Sam and the Balloon That Danced with Hair",
+        "summary": "Sam rubs a balloon on his sleeve and watches it make his little sister's hair stand up, and his mother explains the invisible pull that makes it happen.",
+        "domain": "מדע",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "Yuval and the Whorls on His Thumb",
+        "summary": "Yuval presses his inky thumbprint onto paper and studies its swirling lines with a magnifying glass, wondering if everyone's pattern looks the same.",
+        "domain": "גוף האדם",
+        "music": null
+      }
+    ],
+    "default_k": 3
+  }
 }
