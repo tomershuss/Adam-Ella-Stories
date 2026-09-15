@@ -1,6 +1,6 @@
 {
-  "next_n": 10,
-  "next_lang": "en",
+  "next_n": 11,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -128,49 +128,19 @@
       "lang": "he",
       "summary": "Nofar, a young bee, builds her very first honey cells out of hard-won wax and makes them round like the moon; five round rooms later she sees the little empty holes left between them, and is heartbroken that her wax went to waste. Grandma Zehava flies her up to the old comb wall, where Nofar counts the corners of one cell: six, and none of them leave a hole. She rebuilds with six-cornered rooms and discovers that two neighbours share one wall, so the wax stretches further. The true fact: honeycomb cells are hexagons, which tile with no gaps and need the least total wall (the least wax) for a given area - the honeycomb theorem, proved by Thomas Hales in 1999 - while wax is costly, roughly 6-8 kg of honey eaten per kg of wax. Refrain: זמזום, זמזום. שש פינות. ואין חורים. No music.",
       "music": null
+    },
+    {
+      "n": 10,
+      "date": "2026-09-15",
+      "title": "Noa and the Stars That Blink",
+      "domain": "חלל",
+      "lang": "en",
+      "summary": "Noa, four, goes out on the balcony with her dad before bed and watches one small star shine, go dim and shine again, and is frightened that her star is broken. Her dad explains that the star shines steadily all night long, but its light has to cross the thick moving blanket of air wrapped around the world, where warm and cool layers bend it a tiny step this way and that, so the light wiggles on its way down to her eyes; the moon does not blink because it is a wide disc rather than a pinpoint, so its many wiggles all mix together, and the star low over the rooftops blinks most of all because its light crosses the most air. The true fact: twinkling (scintillation) is added by turbulence in Earth’s atmosphere and not by the star itself, which is why the Moon and the planets look steady and why stars do not twinkle at all seen from above the atmosphere. Refrain: Blink, blink, little light. The star is saying good night. Music: Mozart, 12 Variations on \"Ah, vous dirai-je, maman\", K. 265, Variation 11 Adagio, played by Isata Kanneh-Mason.",
+      "music": {
+        "title": "Mozart - 12 Variations on \"Ah, vous dirai-je Maman\", K. 265, Var. 11 Adagio (Isata Kanneh-Mason)",
+        "youtube_id": "F3_RN40NtBI"
+      }
     }
   ],
-  "menu": {
-    "n": 10,
-    "date": "2026-09-15",
-    "lang": "en",
-    "options": [
-      {
-        "k": 1,
-        "title": "Leo and the Little Crane",
-        "summary": "Leo can't lift his heavy box of blocks, so his grandpa helps him build a tiny toy crane with a wheel and rope that lifts it slowly with just a gentle pull.",
-        "domain": "הנדסה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "Mango the Fox Says Hello",
-        "summary": "Mango the shy fox watches the other animals play every evening until a wise owl tells him that a single quiet \"hello\" is enough to start a friendship.",
-        "domain": "רגשות וחברות",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "Why the Stars Blink at Noa",
-        "summary": "Noa asks her father why the stars flicker while the moon stays steady, and learns that their light wobbles as it passes through the moving air high above.",
-        "domain": "חלל",
-        "music": "Mozart – 12 Variations on \"Ah, vous dirai-je, Maman\" (Twinkle Twinkle Little Star), K. 265"
-      },
-      {
-        "k": 4,
-        "title": "Sam and the Balloon That Danced with Hair",
-        "summary": "Sam rubs a balloon on his sleeve and watches it make his little sister's hair stand up, and his mother explains the invisible pull that makes it happen.",
-        "domain": "מדע",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "Yuval and the Whorls on His Thumb",
-        "summary": "Yuval presses his inky thumbprint onto paper and studies its swirling lines with a magnifying glass, wondering if everyone's pattern looks the same.",
-        "domain": "גוף האדם",
-        "music": null
-      }
-    ],
-    "default_k": 3
-  }
+  "menu": null
 }
