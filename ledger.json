@@ -142,5 +142,47 @@
       }
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 11,
+    "date": "2026-09-16",
+    "lang": "he",
+    "options": [
+      {
+        "k": 1,
+        "title": "דני והגשר של המשולשים",
+        "summary": "Dani, four, tries to build a stick bridge over a garden stream, and discovers that triangle shapes hold their form and keep the bridge from sagging, while squares wobble.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "מאיה, יותם והדאגה הקטנה שהתחלקה לשניים",
+        "summary": "Maya is afraid of a shadow in her room, and when her friend Yotam admits he feels a little scared too, saying the worry out loud makes it feel half as big for each of them.",
+        "domain": "רגשות וחברות",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "הבלון הרך בתוך גילי",
+        "summary": "Gili, four, watches his belly rise and fall like a soft balloon and learns that his breathing quietly slows down all by itself when his body gets ready for sleep.",
+        "domain": "גוף האדם",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "טופי הכלב ותוף הלב השקט",
+        "summary": "Tofi the puppy loves banging his toy drum loudly, but his grandmother shows him that a soft slow beat, like a gentle heartbeat, is the rhythm that helps everyone fall asleep.",
+        "domain": "מוזיקה",
+        "music": "Erik Satie - Gymnopedie No. 1 (any calm solo piano recording)"
+      },
+      {
+        "k": 5,
+        "title": "רימון השועל ולילה הקר של המדבר",
+        "summary": "Rimon, a small fennec fox, is surprised that the desert turns icy cold at night after such a hot day, and learns that dry sand loses its heat quickly once the sun goes down.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      }
+    ],
+    "default_k": 3
+  }
 }
