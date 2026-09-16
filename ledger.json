@@ -1,6 +1,6 @@
 {
-  "next_n": 11,
-  "next_lang": "he",
+  "next_n": 12,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -140,6 +140,15 @@
         "title": "Mozart - 12 Variations on \"Ah, vous dirai-je Maman\", K. 265, Var. 11 Adagio (Isata Kanneh-Mason)",
         "youtube_id": "F3_RN40NtBI"
       }
+    },
+    {
+      "n": 11,
+      "date": "2026-09-16",
+      "title": "הבלון הרך בתוך גילי",
+      "domain": "גוף האדם",
+      "lang": "he",
+      "summary": "Gili, four, jumps and runs right up to bedtime, then lies down and is frightened that his breathing is racing and will not calm down. His mother sits by the bed and stands Dubi, his little teddy, on his tummy: the bear rides up and down fast, and she explains that the belly is like a soft balloon filled and emptied by a wide muscle under the lungs that drops to let air in and rises to push it out. Breathing slowly together, Gili notices that he never told the balloon to slow down - the body does it by itself, fast when he jumps, slow when he rests, and on all night while he sleeps. The true fact: breathing is automatic (the diaphragm contracts and moves down on inhaling, relaxes on exhaling), and the rate falls and becomes very regular on the way into non-REM sleep, reaching its lowest level in deep sleep. Refrain: פנימה, הבלון גדל. החוצה, הבלון קטן. No music.",
+      "music": null
     }
   ],
   "menu": null
