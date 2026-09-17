@@ -151,5 +151,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 12,
+    "date": "2026-09-17",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "Otto and the Bridge That Wouldn't Fall",
+        "summary": "Otto the ant discovers that triangle-braced twigs hold his rickety bridge steady where square frames kept sagging.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "Yuval and the Little Grey Cloud",
+        "summary": "Yuval learns that saying his grumpy feeling out loud, softly, makes the heavy grey cloud inside him shrink until it drifts away.",
+        "domain": "רגשות וחברות",
+        "music": "Satie, Gymnopédie No. 1"
+      },
+      {
+        "k": 3,
+        "title": "Lior and the Balloon That Stuck to the Wall",
+        "summary": "Lior figures out why his balloon clings to the wall after rubbing it on his hair, and watches it slowly let go and float down.",
+        "domain": "מדע",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "Miko the Bat and the Song in the Dark",
+        "summary": "Miko, a young bat afraid of his dark cave, learns that soft clicking sounds bounce back as echoes and let him \"see\" safely in the dark.",
+        "domain": "טבע וחיות",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "Sarai and the Sand That Hums",
+        "summary": "Sarai and her grandfather listen to a desert dune hum softly as sand slides down it, a real \"singing\" sound sleepy dunes make at night.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      }
+    ],
+    "default_k": 4
+  }
 }
