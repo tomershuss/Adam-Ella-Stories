@@ -160,5 +160,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 13,
+    "date": "2026-09-18",
+    "lang": "he",
+    "options": [
+      {
+        "k": 1,
+        "title": "בועות הסבון של נוי",
+        "summary": "A curious child blowing soap bubbles before bed discovers why every bubble, big or small, always comes out perfectly round.",
+        "domain": "מדע",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "מוקי העכבר וטחנת הרוח",
+        "summary": "A small mouse living beside an old windmill learns why its sails always turn to face the wind.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "מיקה ותם נרדמים על הגל",
+        "summary": "Two baby sea otters drift apart on the waves until they learn to hold paws so the sea can never pull them apart while they sleep.",
+        "domain": "רגשות וחברות",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "שוקו הגמלה ושדה המראות",
+        "summary": "A young camel crossing a great salt flat watches it turn into a giant mirror reflecting the whole sky after a night of rain.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "קולה הקטן ושיר הלווייתנים",
+        "summary": "A baby humpback whale calf learns his mother's long underwater song and discovers it can travel for miles through the sea.",
+        "domain": "מוזיקה",
+        "music": "Saint-Saëns, Le Carnaval des animaux – L'Aquarium (The Aquarium)"
+      }
+    ],
+    "default_k": 3
+  }
 }
