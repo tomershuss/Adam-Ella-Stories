@@ -1,6 +1,6 @@
 {
-  "next_n": 13,
-  "next_lang": "he",
+  "next_n": 14,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -158,49 +158,16 @@
       "lang": "en",
       "summary": "Miko, a young bat, will not leave the cave at night because he cannot see in the dark, and he bumps his wing on a wet rock trying. Mama teaches him her tiny song: he calls out, waits, and the sound touches the wall and comes home to his ears, and she shows him that near things answer fast while far things answer slowly, so the black cave turns into a place full of walls, stones and doorways he can hear. He flies out, clicks his way past a tree and a pond to a moth, and comes home at dawn saying the dark sings back. The true fact: a bat calls and listens to the returning echoes to judge distance and size (echolocation); the calls run from about 14 kHz to over 100 kHz, above the roughly 20 kHz limit of human hearing, and bats are not blind. Refrain: Click, click. Listen. The song comes back. No music.",
       "music": null
+    },
+    {
+      "n": 13,
+      "date": "2026-09-18",
+      "title": "מיקה ותם נרדמים על הגל",
+      "domain": "רגשות וחברות",
+      "lang": "he",
+      "summary": "Mika and Tam, two sea otter pups in a cold kelp forest, fall asleep floating on their backs side by side, but the sea drifts them apart in the night and Mika wakes alone on wide grey water; hugging tightly does not survive sleep. Mika's mother lifts a long kelp frond out of the water and shows them it is anchored to the sea floor like a rope, so whoever winds themselves into it stays put, and she joins their paws so they rest close together in the raft. The true fact: sea otters rest on their backs and wrap themselves in kelp or seagrass so the current cannot carry them off while they sleep, they rest in groups called rafts, and a mother wraps her pup in kelp when she dives for food; paw-holding is real but is seen mostly between mother and pup and in aquariums, which the notes for adults flag as the story's one stretch. Refrain: אצה מסביב. כף אל כף. ביחד, ביחד, נרדמים. No music.",
+      "music": null
     }
   ],
-  "menu": {
-    "n": 13,
-    "date": "2026-09-18",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "בועות הסבון של נוי",
-        "summary": "A curious child blowing soap bubbles before bed discovers why every bubble, big or small, always comes out perfectly round.",
-        "domain": "מדע",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "מוקי העכבר וטחנת הרוח",
-        "summary": "A small mouse living beside an old windmill learns why its sails always turn to face the wind.",
-        "domain": "הנדסה",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "מיקה ותם נרדמים על הגל",
-        "summary": "Two baby sea otters drift apart on the waves until they learn to hold paws so the sea can never pull them apart while they sleep.",
-        "domain": "רגשות וחברות",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "שוקו הגמלה ושדה המראות",
-        "summary": "A young camel crossing a great salt flat watches it turn into a giant mirror reflecting the whole sky after a night of rain.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "קולה הקטן ושיר הלווייתנים",
-        "summary": "A baby humpback whale calf learns his mother's long underwater song and discovers it can travel for miles through the sea.",
-        "domain": "מוזיקה",
-        "music": "Saint-Saëns, Le Carnaval des animaux – L'Aquarium (The Aquarium)"
-      }
-    ],
-    "default_k": 3
-  }
+  "menu": null
 }
