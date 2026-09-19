@@ -1,6 +1,6 @@
 {
-  "next_n": 14,
-  "next_lang": "en",
+  "next_n": 15,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -166,6 +166,15 @@
       "domain": "רגשות וחברות",
       "lang": "he",
       "summary": "Mika and Tam, two sea otter pups in a cold kelp forest, fall asleep floating on their backs side by side, but the sea drifts them apart in the night and Mika wakes alone on wide grey water; hugging tightly does not survive sleep. Mika's mother lifts a long kelp frond out of the water and shows them it is anchored to the sea floor like a rope, so whoever winds themselves into it stays put, and she joins their paws so they rest close together in the raft. The true fact: sea otters rest on their backs and wrap themselves in kelp or seagrass so the current cannot carry them off while they sleep, they rest in groups called rafts, and a mother wraps her pup in kelp when she dives for food; paw-holding is real but is seen mostly between mother and pup and in aquariums, which the notes for adults flag as the story's one stretch. Refrain: אצה מסביב. כף אל כף. ביחד, ביחד, נרדמים. No music.",
+      "music": null
+    },
+    {
+      "n": 14,
+      "date": "2026-09-19",
+      "title": "Pip and the Wobbly Tower",
+      "domain": "הנדסה",
+      "lang": "en",
+      "summary": "Pip, a little mouse in a garden shed, wants to reach the small round window where the moon sits, so she ties four sticks into a square and stacks square on square; the tower leans, folds and lies down flat, twice. Grandpa Mo ties three sticks into a triangle, pushes it hard and it does not move, and Pip works out that laying one extra stick across each square, corner to corner, turns it into two triangles that cannot change shape. The true fact: a triangle is the only polygon whose form is fixed by the lengths of its sides, so a four-stick frame with loose corners can rack into a slanted diamond while a triangle cannot, which is why trusses and diagonal bracing fill cranes, roofs, bridges and tall buildings. Refrain: Wibble, wobble, wibble, wobble. Hold still, little tower, hold still. No music.",
       "music": null
     }
   ],
