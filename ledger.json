@@ -169,5 +169,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 14,
+    "date": "2026-09-19",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "The Windmill That Slows Down for the Night",
+        "summary": "A child watches a windmill's great arms catch the evening wind and turn slow gears that grind flour, and learns that even the wind grows sleepy as night falls.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "The Tiny Drops That Come Out at Night",
+        "summary": "A curious child wonders where the sparkling drops on the morning grass come from, and discovers that invisible water hiding in the warm air quietly turns into dew as the night cools.",
+        "domain": "מדע",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "Noa Floats on the Saltiest Sea",
+        "summary": "Visiting the Dead Sea, Noa is amazed to float without even trying, and learns that the water is so full of salt and so heavy that her body simply rests on top of it.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "The Music Written Just for Night",
+        "summary": "A child hears her grandmother play a slow, soft piece on the piano and discovers that some music, called a nocturne, was written long ago especially to be played at night.",
+        "domain": "מוזיקה",
+        "music": "Chopin - Nocturne in E-flat major, Op. 9 No. 2 (look for Arthur Rubinstein's recording)"
+      },
+      {
+        "k": 5,
+        "title": "Louis and the Letters You Can Feel in the Dark",
+        "summary": "A boy who cannot see learns to read a whole page by touch alone, using tiny raised dots invented long ago by young Louis Braille so stories never have to wait for light.",
+        "domain": "היסטוריה",
+        "music": null
+      }
+    ],
+    "default_k": 3
+  }
 }
