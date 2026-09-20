@@ -178,5 +178,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 15,
+    "date": "2026-09-20",
+    "lang": "he",
+    "options": [
+      {
+        "k": 1,
+        "title": "רוני והשקיעה שהחליפה צבע",
+        "summary": "A little rabbit watches the blue sky turn orange and pink at sunset and learns why the sky changes color as the sun goes down.",
+        "domain": "מדע",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "מאיה צפה בים המלח",
+        "summary": "A girl visiting the Dead Sea is afraid she will sink, but discovers the very salty water gently holds her up like a floating leaf.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "קופסת הנגינה של סבתא",
+        "summary": "A boy winds up his grandmother's old music box and watches its tune slow down softly as it winds down, just like getting sleepy.",
+        "domain": "מוזיקה",
+        "music": "Erik Satie – Gymnopédie No. 1 (a gentle piano recording, e.g. Pascal Rogé)"
+      },
+      {
+        "k": 4,
+        "title": "טדי ותיאודור הטוב לב",
+        "summary": "A stuffed teddy bear wonders why he is called \"teddy\" and learns the gentle true story of a kind president who would not hurt a bear cub.",
+        "domain": "היסטוריה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "תמר והתמונה מהנקודות",
+        "summary": "A girl painting with tiny dots is upset it looks messy up close, until stepping back reveals a whole picture, the way painter Georges Seurat once discovered.",
+        "domain": "אומנות",
+        "music": null
+      }
+    ],
+    "default_k": 3
+  }
 }
