@@ -1,6 +1,6 @@
 {
-  "next_n": 15,
-  "next_lang": "he",
+  "next_n": 16,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -176,49 +176,19 @@
       "lang": "en",
       "summary": "Pip, a little mouse in a garden shed, wants to reach the small round window where the moon sits, so she ties four sticks into a square and stacks square on square; the tower leans, folds and lies down flat, twice. Grandpa Mo ties three sticks into a triangle, pushes it hard and it does not move, and Pip works out that laying one extra stick across each square, corner to corner, turns it into two triangles that cannot change shape. The true fact: a triangle is the only polygon whose form is fixed by the lengths of its sides, so a four-stick frame with loose corners can rack into a slanted diamond while a triangle cannot, which is why trusses and diagonal bracing fill cranes, roofs, bridges and tall buildings. Refrain: Wibble, wobble, wibble, wobble. Hold still, little tower, hold still. No music.",
       "music": null
+    },
+    {
+      "n": 15,
+      "date": "2026-09-20",
+      "title": "קופסת הנגינה של סבתא",
+      "domain": "מוזיקה",
+      "lang": "he",
+      "summary": "Ido, four, cannot fall asleep at his grandmother's house because the quiet there is unfamiliar, so she brings down a plain little wooden music box with a small golden key. She winds it, opens the lid, and shows him what is inside: a metal cylinder covered in tiny pins that turns and plucks the teeth of a steel comb, one pin lifting one tooth and letting it spring back into a note, so the tune is written on the cylinder in dots. When the song starts to slow and space out Ido is afraid the box is breaking, and grandmother explains the wound spring whose push is running out, so the box is not broken but tired, like him. The true fact: a music box sounds pins on a rotating cylinder plucking the tuned teeth of a steel comb, driven by a coiled spring whose push finally runs out, which is why the very last notes come slower and quieter. Refrain: דינג, דינג, דינג. הקופסה הקטנה שרה. Music: Satie, Gymnopedie No. 1, Alexandre Tharaud (Warner Classics).",
+      "music": {
+        "title": "Erik Satie - Gymnopedie No. 1 (Alexandre Tharaud, piano; Warner Classics)",
+        "youtube_id": "I5XTg2VW9N4"
+      }
     }
   ],
-  "menu": {
-    "n": 15,
-    "date": "2026-09-20",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "רוני והשקיעה שהחליפה צבע",
-        "summary": "A little rabbit watches the blue sky turn orange and pink at sunset and learns why the sky changes color as the sun goes down.",
-        "domain": "מדע",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "מאיה צפה בים המלח",
-        "summary": "A girl visiting the Dead Sea is afraid she will sink, but discovers the very salty water gently holds her up like a floating leaf.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "קופסת הנגינה של סבתא",
-        "summary": "A boy winds up his grandmother's old music box and watches its tune slow down softly as it winds down, just like getting sleepy.",
-        "domain": "מוזיקה",
-        "music": "Erik Satie – Gymnopédie No. 1 (a gentle piano recording, e.g. Pascal Rogé)"
-      },
-      {
-        "k": 4,
-        "title": "טדי ותיאודור הטוב לב",
-        "summary": "A stuffed teddy bear wonders why he is called \"teddy\" and learns the gentle true story of a kind president who would not hurt a bear cub.",
-        "domain": "היסטוריה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "תמר והתמונה מהנקודות",
-        "summary": "A girl painting with tiny dots is upset it looks messy up close, until stepping back reveals a whole picture, the way painter Georges Seurat once discovered.",
-        "domain": "אומנות",
-        "music": null
-      }
-    ],
-    "default_k": 3
-  }
+  "menu": null
 }
