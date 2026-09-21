@@ -190,5 +190,47 @@
       }
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 16,
+    "date": "2026-09-21",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "Yuval and the Shadow That Grew",
+        "summary": "A boy notices his shadow grows long and short as he moves near or far from his nightlight, and learns that a shadow is just blocked light changing size with distance.",
+        "domain": "מדע",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "Zafi and the Singing Dune",
+        "summary": "A camel calf in the desert hears the sand dune hum softly at night and learns that dry, rounded grains sliding together make the dune \"sing.\"",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "Meret and the Water That Told Time",
+        "summary": "A girl in ancient Egypt watches her grandfather's dripping water clock and discovers how people measured the hours of the night before clocks existed.",
+        "domain": "היסטוריה",
+        "music": "Chopin, Prelude Op. 28 No. 15 (\"Raindrop\")"
+      },
+      {
+        "k": 4,
+        "title": "Kaito and the Paper Crane",
+        "summary": "A boy folds a single square of paper again and again with his grandmother and discovers how folds alone can turn flat paper into a bird.",
+        "domain": "אומנות",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "Sasha and the Mirror Wings",
+        "summary": "A young butterfly worries her two wings don't match until she learns that one side is a mirror of the other, which is what keeps her steady in flight.",
+        "domain": "מתמטיקה",
+        "music": null
+      }
+    ],
+    "default_k": 1
+  }
 }
