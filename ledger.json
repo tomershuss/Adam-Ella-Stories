@@ -1,6 +1,6 @@
 {
-  "next_n": 17,
-  "next_lang": "he",
+  "next_n": 18,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -197,49 +197,19 @@
       "lang": "en",
       "summary": "Yuval, four, wakes in the night, climbs down for a sip of water and freezes: a tall dark giant stands on his bedroom wall and copies every move he makes. Mum sits down on the floor and has him wave, then explains that the little nightlight sends its light out in straight lines which cannot bend around him, so the wall behind him stays dark in his own shape; walking towards the lamp swells the shadow up to the ceiling and walking back to the wall shrinks it to his own size, after which he plays at making a shadow bird, a shadow rabbit and a huge round shadow for Kubi his bear. The true fact: a shadow is a place the light could not reach, and because a nearby lamp's light spreads out in a widening fan, the closer you stand to the lamp the more of that fan you block and the bigger your shadow (roughly your height times the lamp-to-wall distance divided by the lamp-to-you distance); outdoors it does not work, because the Sun is far enough away that its rays arrive almost parallel. Refrain: Step, step, close: the shadow grows tall. Step, step, back: the shadow grows small. No music.",
       "music": null
+    },
+    {
+      "n": 17,
+      "date": "2026-09-22",
+      "title": "הירח המתחלף של נועה",
+      "domain": "חלל",
+      "lang": "he",
+      "summary": "Noa, four, goes out on the balcony with her mother every evening to find the moon, and over a few nights she watches it lose a piece and thin down to a curved white line, until she is close to tears and sure the moon is finishing. In the dark kitchen her mother lights one side of an orange with a small torch and has her walk slowly around it: the lit part goes from a full circle to a half to a thin bright edge, while the orange never changes at all, and Noa works out that the orange did not shrink, she moved. The true fact: the Sun always lights exactly half the Moon, and because the Moon orbits Earth we see a different amount of that lit half each night, so the phases are a matter of viewing geometry and not of Earth's shadow (that is a lunar eclipse); the Moon makes no light of its own but reflects sunlight, and a full cycle of phases takes about 29.5 days. Refrain: ששש... מסתכלים למעלה. הירח שם. הירח שלם. Music: Beethoven, Moonlight Sonata, first movement, Nikolai Lugansky.",
+      "music": {
+        "title": "Beethoven - Piano Sonata no. 14 'Moonlight', I. Adagio sostenuto (Nikolai Lugansky; harmonia mundi)",
+        "youtube_id": "ADi0G9corsY"
+      }
     }
   ],
-  "menu": {
-    "n": 17,
-    "date": "2026-09-22",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "תמר צפה על המלח",
-        "summary": "Tamar visits the Dead Sea with her family and discovers why she floats effortlessly on its water while she sinks in her home pool, and why the water tastes so salty.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "השעון החולי של סבא",
-        "summary": "A boy who keeps asking \"how much longer until morning\" learns from his grandfather how people once measured time with shadows, candles, and trickling sand, and watches an hourglass turn the wait into something he can see.",
-        "domain": "היסטוריה",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "מאיה ותמונת האבנים הקטנות",
-        "summary": "A girl helps her grandmother press hundreds of small colored tile pieces into a tabletop and discovers that stepping back turns the scattered fragments into one whole picture.",
-        "domain": "אומנות",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "הכתמים התאומים על כנפי הפרפר",
-        "summary": "A girl painting a butterfly discovers that folding her wet painting in half makes the pattern on one wing appear perfectly copied onto the other.",
-        "domain": "מתמטיקה",
-        "music": "Schumann - Papillons, Op. 2 (a calm movement; look for a gentle solo piano recording)"
-      },
-      {
-        "k": 5,
-        "title": "הירח המתחלף של נועה",
-        "summary": "A girl worried that the moon is disappearing piece by piece learns from her mother, using an orange and a flashlight, that the moon is always whole and only the sunlight on it is changing shape.",
-        "domain": "חלל",
-        "music": "Beethoven - Moonlight Sonata, 1st movement (a calm recording, e.g. Wilhelm Kempff)"
-      }
-    ],
-    "default_k": 5
-  }
+  "menu": null
 }
