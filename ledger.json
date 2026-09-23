@@ -211,5 +211,47 @@
       }
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 18,
+    "date": "2026-09-23",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "Ada and the First Eyeglasses",
+        "summary": "A curious girl visiting her grandfather's old shop learns how, centuries ago in Italy, someone first curved two pieces of glass to turn blurry pages into clear ones.",
+        "domain": "היסטוריה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "Kavi and the Singing Sand Dune",
+        "summary": "Camping with his family at the edge of a great desert, a boy is startled by a deep humming sound rolling down a sand dune until his father explains that dry grains sliding together can make the dune sing.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "Momo and the Bridge of Stones",
+        "summary": "A small fox wants to visit her friend across a stream, and with her grandfather's help she learns how a curved row of stones can lock around one last keystone and hold everyone's weight without any glue.",
+        "domain": "הנדסה",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "Wren and the Warm Woolly Circle",
+        "summary": "A lamb spending her first cold night in a new field feels small and alone until the older sheep show her how pressing together in a circle keeps everyone warmer than any one of them alone.",
+        "domain": "רגשות וחברות",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "Fen the Firefly's Quiet Lamp",
+        "summary": "A young firefly worries that her blinking light looks different from her friends' until her mother explains that every firefly flashes its own special pattern, like a name written in light, so fireflies can find each other in the dark.",
+        "domain": "טבע וחיות",
+        "music": null
+      }
+    ],
+    "default_k": 5
+  }
 }
