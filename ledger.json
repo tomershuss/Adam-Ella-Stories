@@ -1,6 +1,6 @@
 {
-  "next_n": 19,
-  "next_lang": "he",
+  "next_n": 20,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -218,49 +218,16 @@
       "lang": "en",
       "summary": "Fen, a young firefly on her first night of flying, sees the meadow full of fireflies blinking quick bright flashes, but her own lamp will only make one long slow gold glow, so she decides it is broken and hides under her leaf. Her mother has her feel the lamp and find it cool rather than hot, then lifts her own lamp and makes exactly the same long slow glow, explaining that every kind of firefly has its own flash pattern and it is how they say their name in the dark; when Fen glows, slow gold lights answer her from all across the meadow. The true fact: each firefly species has its own flash pattern (how long each flash lasts, how many there are, the pause between them), which is how males signal and females of the same species answer, and a firefly's light is a cold light made by luciferin, oxygen and the enzyme luciferase, giving off almost no heat. Refrain: Blink, blink, quick. Glow, glow, slow. Every little light says hello. No music.",
       "music": null
+    },
+    {
+      "n": 19,
+      "date": "2026-09-24",
+      "title": "עומר והפיהוק שרץ לכולם",
+      "domain": "גוף האדם",
+      "lang": "he",
+      "summary": "Omer, four, is building a block tower before bed when a big yawn escapes him; his mother yawns back, then Grandpa Dani, then Shoko the dog, and Omer claps both hands over his mouth, frightened that he is making everyone tired and has done something wrong. His mother sits with him on the rug and explains that a yawn passes from one person to the next the way a smile does, and that his body does it by itself without being asked; when he tries it on his two-and-a-half-year-old sister Tamar nothing happens, because catching yawns only begins at about age four, which is something he learned to do this year. The true fact: contagious yawning is real (seeing a yawn, and often just hearing or reading about one, sets off a yawn in roughly half of adults), it is essentially absent in babies and toddlers and rises sharply around age four, chimpanzees and dogs catch yawns too, and why we yawn at all is still unsettled - the brain-cooling hypothesis is the best known but remains contested. Refrain: האאאה... פיהוק אחד. האאאה... ועוד פיהוק רץ. No music.",
+      "music": null
     }
   ],
-  "menu": {
-    "n": 19,
-    "date": "2026-09-24",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "נור הגמל והדיונה שהולכת לאט",
-        "summary": "A baby camel named Nur worries her favorite sand dune is walking away from her, until Grandpa Camel explains that dunes really do creep forward, grain by grain, so slowly that no one ever sees them move.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "ליאן והמטרייה הראשונה",
-        "summary": "On a rainy night in an old village, Lian learns that people once had only leaves and cloaks to keep dry, until someone coated paper with oil to make the very first waterproof umbrella, and she falls asleep listening to raindrops patter on hers.",
-        "domain": "היסטוריה",
-        "music": "Chopin, Prelude Op. 28 No. 15 \"Raindrop\" (e.g. Martha Argerich)"
-      },
-      {
-        "k": 3,
-        "title": "מאיה ומרבד הצבעים של סבתא",
-        "summary": "Maya visits her grandmother's loom on a quiet evening and worries the criss-crossed threads will tangle forever, until she learns the calm over-under rhythm that turns loose strings into a soft, patterned rug.",
-        "domain": "אומנות",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "נעמה העכבישה סופרת חוטים",
-        "summary": "Na'ama, a young garden spider, wants her web to look exactly like her mother's, so she counts her spokes and spaces them evenly until her web catches the moonlight in a perfect round pattern.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "עומר והפיהוק שרץ לכולם",
-        "summary": "Omer notices his whole family starts yawning right after he does, and his mother explains that a yawn is like a soft, sleepy hello that jumps from one person to the next, cooling tired brains and getting everyone ready for bed.",
-        "domain": "גוף האדם",
-        "music": null
-      }
-    ],
-    "default_k": 5
-  }
+  "menu": null
 }
