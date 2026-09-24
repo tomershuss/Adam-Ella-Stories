@@ -220,5 +220,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 19,
+    "date": "2026-09-24",
+    "lang": "he",
+    "options": [
+      {
+        "k": 1,
+        "title": "נור הגמל והדיונה שהולכת לאט",
+        "summary": "A baby camel named Nur worries her favorite sand dune is walking away from her, until Grandpa Camel explains that dunes really do creep forward, grain by grain, so slowly that no one ever sees them move.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "ליאן והמטרייה הראשונה",
+        "summary": "On a rainy night in an old village, Lian learns that people once had only leaves and cloaks to keep dry, until someone coated paper with oil to make the very first waterproof umbrella, and she falls asleep listening to raindrops patter on hers.",
+        "domain": "היסטוריה",
+        "music": "Chopin, Prelude Op. 28 No. 15 \"Raindrop\" (e.g. Martha Argerich)"
+      },
+      {
+        "k": 3,
+        "title": "מאיה ומרבד הצבעים של סבתא",
+        "summary": "Maya visits her grandmother's loom on a quiet evening and worries the criss-crossed threads will tangle forever, until she learns the calm over-under rhythm that turns loose strings into a soft, patterned rug.",
+        "domain": "אומנות",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "נעמה העכבישה סופרת חוטים",
+        "summary": "Na'ama, a young garden spider, wants her web to look exactly like her mother's, so she counts her spokes and spaces them evenly until her web catches the moonlight in a perfect round pattern.",
+        "domain": "מתמטיקה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "עומר והפיהוק שרץ לכולם",
+        "summary": "Omer notices his whole family starts yawning right after he does, and his mother explains that a yawn is like a soft, sleepy hello that jumps from one person to the next, cooling tired brains and getting everyone ready for bed.",
+        "domain": "גוף האדם",
+        "music": null
+      }
+    ],
+    "default_k": 5
+  }
 }
