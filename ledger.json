@@ -229,5 +229,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 20,
+    "date": "2026-09-25",
+    "lang": "en",
+    "options": [
+      {
+        "k": 1,
+        "title": "Ben and the Sea That Holds You Up",
+        "summary": "A boy floats for the first time in Israel's Dead Sea, afraid he'll sink, and discovers the salty water is what gently holds him up.",
+        "domain": "גיאוגרפיה",
+        "music": null
+      },
+      {
+        "k": 2,
+        "title": "The Bear Born From a Kind Story",
+        "summary": "A grandfather tells his grandson how a president's kindness to a trapped bear cub led a toymaker to create the first teddy bear.",
+        "domain": "היסטוריה",
+        "music": "Teddy Bears' Picnic (John Bratton) — look for a soft, slow lullaby version"
+      },
+      {
+        "k": 3,
+        "title": "Yael and the Picture Made of a Thousand Little Stones",
+        "summary": "A girl helping her grandmother press tiny colored stones into a mosaic worries the picture looks like a messy jumble up close, until she steps back and sees it become one clear image.",
+        "domain": "אומנות",
+        "music": null
+      },
+      {
+        "k": 4,
+        "title": "Dana and the Butterfly's Matching Wing",
+        "summary": "A girl painting one wing of a paper butterfly discovers that folding the paper prints a perfectly matching mirror-image wing on the other side.",
+        "domain": "מתמטיקה",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "Tom and the Boy Who Sat Alone",
+        "summary": "A boy notices a new classmate sitting alone at kindergarten and learns that one small wave and smile is enough to turn a stranger into a friend.",
+        "domain": "רגשות וחברות",
+        "music": null
+      }
+    ],
+    "default_k": 1
+  }
 }
