@@ -1,6 +1,6 @@
 {
-  "next_n": 20,
-  "next_lang": "en",
+  "next_n": 21,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -227,49 +227,16 @@
       "lang": "he",
       "summary": "Omer, four, is building a block tower before bed when a big yawn escapes him; his mother yawns back, then Grandpa Dani, then Shoko the dog, and Omer claps both hands over his mouth, frightened that he is making everyone tired and has done something wrong. His mother sits with him on the rug and explains that a yawn passes from one person to the next the way a smile does, and that his body does it by itself without being asked; when he tries it on his two-and-a-half-year-old sister Tamar nothing happens, because catching yawns only begins at about age four, which is something he learned to do this year. The true fact: contagious yawning is real (seeing a yawn, and often just hearing or reading about one, sets off a yawn in roughly half of adults), it is essentially absent in babies and toddlers and rises sharply around age four, chimpanzees and dogs catch yawns too, and why we yawn at all is still unsettled - the brain-cooling hypothesis is the best known but remains contested. Refrain: האאאה... פיהוק אחד. האאאה... ועוד פיהוק רץ. No music.",
       "music": null
+    },
+    {
+      "n": 20,
+      "date": "2026-09-25",
+      "title": "Ben and the Sea That Holds You Up",
+      "domain": "גיאוגרפיה",
+      "lang": "en",
+      "summary": "Ben, four, drives down with Dad to a sea at the lowest place on Earth, finds the shore crusted white and crunchy with salt, and then refuses to go in because in the pool at home he always sinks. Dad kneels beside him, pours a little pile of salt into his hand and explains that salty water is heavier than plain water and pushes up hard, and when Ben sits down his legs float straight up by themselves; he lies back, the water holds him like a hand under his back, and no fish comes past because nothing big can live in water this salty. The true fact: the Dead Sea holds about 290-300 g of salt per kg of water against the ocean's 35 g, roughly nine times as salty, so the water is dense enough that a body floats with most of it above the surface, and it is the lowest land surface on Earth at more than 400 m below sea level. Refrain: Salt in the water. Salt in the sea. Up, up, up - the water holds me.",
+      "music": null
     }
   ],
-  "menu": {
-    "n": 20,
-    "date": "2026-09-25",
-    "lang": "en",
-    "options": [
-      {
-        "k": 1,
-        "title": "Ben and the Sea That Holds You Up",
-        "summary": "A boy floats for the first time in Israel's Dead Sea, afraid he'll sink, and discovers the salty water is what gently holds him up.",
-        "domain": "גיאוגרפיה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "The Bear Born From a Kind Story",
-        "summary": "A grandfather tells his grandson how a president's kindness to a trapped bear cub led a toymaker to create the first teddy bear.",
-        "domain": "היסטוריה",
-        "music": "Teddy Bears' Picnic (John Bratton) — look for a soft, slow lullaby version"
-      },
-      {
-        "k": 3,
-        "title": "Yael and the Picture Made of a Thousand Little Stones",
-        "summary": "A girl helping her grandmother press tiny colored stones into a mosaic worries the picture looks like a messy jumble up close, until she steps back and sees it become one clear image.",
-        "domain": "אומנות",
-        "music": null
-      },
-      {
-        "k": 4,
-        "title": "Dana and the Butterfly's Matching Wing",
-        "summary": "A girl painting one wing of a paper butterfly discovers that folding the paper prints a perfectly matching mirror-image wing on the other side.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "Tom and the Boy Who Sat Alone",
-        "summary": "A boy notices a new classmate sitting alone at kindergarten and learns that one small wave and smile is enough to turn a stranger into a friend.",
-        "domain": "רגשות וחברות",
-        "music": null
-      }
-    ],
-    "default_k": 1
-  }
+  "menu": null
 }
