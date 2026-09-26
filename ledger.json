@@ -238,5 +238,47 @@
       "music": null
     }
   ],
-  "menu": null
+  "menu": {
+    "n": 21,
+    "date": "2026-09-26",
+    "lang": "he",
+    "options": [
+      {
+        "k": 1,
+        "title": "ואן גוך והלילה המסתחרר",
+        "summary": "A child watches Van Gogh paint swirling stars with thick circular brushstrokes and discovers that a still painting can feel like it's moving.",
+        "domain": "אומנות",
+        "music": "Don McLean, \"Vincent\" (Starry Starry Night)"
+      },
+      {
+        "k": 2,
+        "title": "נומי והכנף התאומה",
+        "summary": "A young butterfly worried that her wings don't match discovers they are mirror twins, and that many living things are built from two matching halves.",
+        "domain": "מתמטיקה",
+        "music": null
+      },
+      {
+        "k": 3,
+        "title": "תמר ואצבעות שקוראות בחושך",
+        "summary": "A child visits her blind grandmother, who reads a book in a pitch-dark room by gently touching raised dots, and learns that fingers can \"see\" in the dark.",
+        "domain": "היסטוריה",
+        "music": "Chopin, Nocturne in E-flat major, Op. 9 No. 2"
+      },
+      {
+        "k": 4,
+        "title": "גוזי ואחותו הקטנטנה",
+        "summary": "A big sister chick who wants a quiet nest of her own discovers that helping her tiny new sister learn to fly feels like its own kind of rest.",
+        "domain": "רגשות וחברות",
+        "music": null
+      },
+      {
+        "k": 5,
+        "title": "קשת האבן שלא נופלת",
+        "summary": "A young beaver whose stone bridge keeps collapsing discovers that stones curved into an arch lean on each other and hold themselves up.",
+        "domain": "הנדסה",
+        "music": null
+      }
+    ],
+    "default_k": 3
+  }
 }
