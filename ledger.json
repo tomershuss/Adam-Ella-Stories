@@ -1,6 +1,6 @@
 {
-  "next_n": 21,
-  "next_lang": "he",
+  "next_n": 22,
+  "next_lang": "en",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -236,49 +236,19 @@
       "lang": "en",
       "summary": "Ben, four, drives down with Dad to a sea at the lowest place on Earth, finds the shore crusted white and crunchy with salt, and then refuses to go in because in the pool at home he always sinks. Dad kneels beside him, pours a little pile of salt into his hand and explains that salty water is heavier than plain water and pushes up hard, and when Ben sits down his legs float straight up by themselves; he lies back, the water holds him like a hand under his back, and no fish comes past because nothing big can live in water this salty. The true fact: the Dead Sea holds about 290-300 g of salt per kg of water against the ocean's 35 g, roughly nine times as salty, so the water is dense enough that a body floats with most of it above the surface, and it is the lowest land surface on Earth at more than 400 m below sea level. Refrain: Salt in the water. Salt in the sea. Up, up, up - the water holds me.",
       "music": null
+    },
+    {
+      "n": 21,
+      "date": "2026-09-26",
+      "title": "תמר ואצבעות שקוראות בחושך",
+      "domain": "היסטוריה",
+      "lang": "he",
+      "summary": "Tamar, four, sleeps at her grandmother Ruti's house every Friday, and when grandma switches off the lamp Tamar is sad, sure the dark has taken the bedtime story away until morning. But grandma is blind and keeps turning pages: she reads with her fingers, and when she guides Tamar's hand onto the page Tamar feels small hard raised dots, counts the dots in a single letter and finds six, in two columns of three, which fit exactly under one fingertip. The true fact: a braille cell is six raised dots (63 combinations plus the blank), sized so that one fingertip senses the whole letter in a single touch and can then slide straight on to the next, which is why Louis Braille cut Charles Barbier's twelve-dot sign down to six in 1824 at the age of fifteen and published the system in 1829. Refrain: נקודה, נקודה, נקודה. האצבע קוראת בחושך. Music: Chopin, Nocturne in E flat major Op. 9 No. 2, Dmitry Shishkin, from the Chopin Institute channel.",
+      "music": {
+        "title": "Fryderyk Chopin - Nocturne in E flat major, Op. 9 No. 2 (Dmitry Shishkin; Chopin Institute)",
+        "youtube_id": "JVBzE0mUlSs"
+      }
     }
   ],
-  "menu": {
-    "n": 21,
-    "date": "2026-09-26",
-    "lang": "he",
-    "options": [
-      {
-        "k": 1,
-        "title": "ואן גוך והלילה המסתחרר",
-        "summary": "A child watches Van Gogh paint swirling stars with thick circular brushstrokes and discovers that a still painting can feel like it's moving.",
-        "domain": "אומנות",
-        "music": "Don McLean, \"Vincent\" (Starry Starry Night)"
-      },
-      {
-        "k": 2,
-        "title": "נומי והכנף התאומה",
-        "summary": "A young butterfly worried that her wings don't match discovers they are mirror twins, and that many living things are built from two matching halves.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "תמר ואצבעות שקוראות בחושך",
-        "summary": "A child visits her blind grandmother, who reads a book in a pitch-dark room by gently touching raised dots, and learns that fingers can \"see\" in the dark.",
-        "domain": "היסטוריה",
-        "music": "Chopin, Nocturne in E-flat major, Op. 9 No. 2"
-      },
-      {
-        "k": 4,
-        "title": "גוזי ואחותו הקטנטנה",
-        "summary": "A big sister chick who wants a quiet nest of her own discovers that helping her tiny new sister learn to fly feels like its own kind of rest.",
-        "domain": "רגשות וחברות",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "קשת האבן שלא נופלת",
-        "summary": "A young beaver whose stone bridge keeps collapsing discovers that stones curved into an arch lean on each other and hold themselves up.",
-        "domain": "הנדסה",
-        "music": null
-      }
-    ],
-    "default_k": 3
-  }
+  "menu": null
 }
