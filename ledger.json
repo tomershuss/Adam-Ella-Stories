@@ -1,6 +1,6 @@
 {
-  "next_n": 22,
-  "next_lang": "en",
+  "next_n": 23,
+  "next_lang": "he",
   "parent_email": "tomer@shussman.net",
   "site": "https://tomershuss.github.io/Adam-Ella-Stories/",
   "repo": "https://github.com/tomershuss/Adam-Ella-Stories",
@@ -248,49 +248,19 @@
         "title": "Fryderyk Chopin - Nocturne in E flat major, Op. 9 No. 2 (Dmitry Shishkin; Chopin Institute)",
         "youtube_id": "JVBzE0mUlSs"
       }
+    },
+    {
+      "n": 22,
+      "date": "2026-09-27",
+      "title": "Leo and Saturn's Quiet Rings",
+      "domain": "חלל",
+      "lang": "en",
+      "summary": "Leo, four, drops his favourite toy planet and its gold ring snaps off, and he is frightened that the real ring around Saturn can break too. Dad tells him the real ring is already broken - it is billions of separate pieces of ice, from specks of dust to chunks the size of a mountain, each one circling Saturn on its own - and shows him with a circle of sugar poured around an orange on a dark tray. The true fact: Saturn's rings are not solid but countless independent particles of water ice, spread about 280,000 km wide and only around ten metres thick, and because space has no air the whole ring turns in complete silence. Refrain: Round and round and round they go. Quiet, quiet, soft and slow. Music: Holst, Venus, the Bringer of Peace, Danish National Symphony Orchestra.",
+      "music": {
+        "title": "Holst - Venus, the Bringer of Peace (The Planets)",
+        "youtube_id": "tawgYqPbAZ0"
+      }
     }
   ],
-  "menu": {
-    "n": 22,
-    "date": "2026-09-27",
-    "lang": "en",
-    "options": [
-      {
-        "k": 1,
-        "title": "Mila and the Mirror Wings",
-        "summary": "A little girl notices her butterfly friend's wings match perfectly on both sides, and discovers that many things in nature — leaves, faces, even her own hands — share this same mirror-symmetry.",
-        "domain": "מתמטיקה",
-        "music": null
-      },
-      {
-        "k": 2,
-        "title": "Theo and the Picture Made of Pieces",
-        "summary": "When Theo accidentally breaks his grandmother's favorite bowl, she shows him how tiny broken pieces, arranged carefully, can become a beautiful mosaic picture.",
-        "domain": "אומנות",
-        "music": null
-      },
-      {
-        "k": 3,
-        "title": "Leo and Saturn's Quiet Rings",
-        "summary": "Leo wonders what makes the ring around his toy planet, and his father tells him about Saturn's real rings — countless tiny pieces of ice and rock circling forever in perfect quiet.",
-        "domain": "חלל",
-        "music": "Holst, \"Saturn, the Bringer of Old Age\" (The Planets) — look for a calm, slow recording"
-      },
-      {
-        "k": 4,
-        "title": "Yara and the Patient Swing",
-        "summary": "Yara can't stand waiting her turn for the swing until a friend teaches her a small trick for turning the wait into something fun.",
-        "domain": "רגשות וחברות",
-        "music": null
-      },
-      {
-        "k": 5,
-        "title": "Milo and the Stone That Held the Bridge",
-        "summary": "Milo builds a wobbly bridge of flat stones over a puddle until he learns the secret of the curved keystone that lets the middle stone hold up all the others.",
-        "domain": "הנדסה",
-        "music": null
-      }
-    ],
-    "default_k": 3
-  }
+  "menu": null
 }
